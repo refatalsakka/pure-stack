@@ -1,0 +1,6 @@
+presta_sitemap:
+  alternate:
+    enabled: true
+    default_locale: '%env(DEFAULT_LANGUAGE)%'
+    locales: ['en', 'de']
+    i18n: symfony

@@ -1,0 +1,10 @@
+FROM node:20-alpine
+# Set the working directory
+WORKDIR /var/www/html
+
+# Copy only the necessary files
+COPY package.json package-lock.json ./
+COPY webpack.config.js ./
+COPY assets ./assets
+
+CMD npm install && npm run watch

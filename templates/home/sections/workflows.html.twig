@@ -1,0 +1,38 @@
+<section id="workflows" class="home-workflows">
+	<h1>
+		{{ "home.workflows_section.title"|trans }}
+		<span>
+			?<img src="{{ asset("build/shapes/common/small-grass-left.svg") }}" alt="small grass"/>
+		</span>
+	</h1>
+	<div class="container">
+		<div class="rotating-container">
+			<div class="circle">
+				<div class="internal-circle"></div>
+				{% for stage in workStages %}
+					<div class="icon {% if loop.first %}active{% endif %}" style="--i:{{ loop.index }};" data-text="text-{{ loop.index }}" data-title="title-{{ loop.index }}">
+						<img src="{{ asset('build/icons/workflows/' ~ stage.icon ~ '.png') }}" alt="{{ ('work_stages.' ~ stage.translationKey ~ '.title')|trans }}"/>
+					</div>
+				{% endfor %}
+
+				{% for stage in workStages %}
+					<div class="title {% if loop.first %}active{% endif %}" id="title-{{ loop.index }}">
+						<h2>{{ loop.index }}.
+							{{ ('work_stages.' ~ stage.translationKey ~ '.title')|trans }}</h2>
+					</div>
+				{% endfor %}
+			</div>
+			<div class="line">
+				<img src="{{ asset('build/shapes/home-service-section/arrow.svg') }}" alt="arrow"/>
+			</div>
+			<div class="texts-container">
+				{% for stage in workStages %}
+					<div class="text {% if loop.first %}active{% endif %}" id="text-{{ loop.index }}">
+						<h3>{{ ('work_stages.' ~ stage.translationKey ~ '.summary_title')|trans }}</h3>
+						<p>{{ ('work_stages.' ~ stage.translationKey ~ '.summary')|trans }}</p>
+					</div>
+				{% endfor %}
+			</div>
+		</div>
+	</div>
+</section>

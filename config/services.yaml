@@ -1,0 +1,58 @@
+# This file is the entry point to configure your own services.
+# Files in the packages/ subdirectory configure your dependencies.
+
+# Put parameters here that don't need to change on each machine where the app is deployed
+# https://symfony.com/doc/current/best_practices.html#use-parameters-for-application-configuration
+parameters:
+    ALLOWED_LANGUAGES: "%env(ALLOWED_LANGUAGES)%"
+    DEFAULT_LANGUAGE: "%env(DEFAULT_LANGUAGE)%"
+    GOOGLE_RECAPTCHA_SITE_KEY: '%env(GOOGLE_RECAPTCHA_SITE_KEY)%'
+    timezone: 'Europe/Berlin'
+
+services:
+    # default configuration for services in *this* file
+    _defaults:
+        autowire: true      # Automatically injects dependencies in your services.
+        autoconfigure: true # Automatically registers your services as commands, event subscribers, etc.
+
+    # makes classes in src/ available to be used as services
+    # this creates a service per class whose id is the fully-qualified class name
+    App\:
+        resource: '../src/'
+        exclude:
+            - '../src/DependencyInjection/'
+            - '../src/Entity/'
+            - '../src/Listener/'
+            - '../src/Kernel.php'
+
+    App\EventListener\LocaleRedirectListener:
+        arguments:
+            $defaultLocale: '%DEFAULT_LANGUAGE%'
+        tags:
+            - { name: kernel.event_listener, event: kernel.request, method: onKernelRequest }
+
+    App\EventListener\Redirect404ToHomepageListener:
+        tags:
+            - { name: kernel.event_listener, event: kernel.exception, method: onKernelException }
+
+    App\Service\RecaptchaValidator:
+        arguments:
+            $secretKey: '%env(GOOGLE_RECAPTCHA_SECRET_KEY)%'
+
+    App\Service\ContactFormMailer:
+        arguments:
+            $recipient: '%env(EMAIL_RECIPIENT)%'
+            $from: '%env(EMAIL_FROM)%'
+
+    App\EventListener\SitemapLocaleSubscriber:
+        arguments:
+            $locales: '%ALLOWED_LANGUAGES%'
+        tags:
+            - { name: kernel.event_subscriber }
+
+    App\EventListener\UrlLocaleExtension:
+        arguments:
+            $requestStack: '@request_stack'
+        tags: ['twig.extension']
+    # add more service definitions when explicit configuration is needed
+    # please note that last definitions always *replace* previous ones

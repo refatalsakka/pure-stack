@@ -1,0 +1,251 @@
+@import './../../../vars';
+
+.home-contact-us {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  justify-content: space-evenly;
+  min-height: 100vh;
+  overflow: hidden;
+	margin-bottom: 50px;
+
+    img[src='/build/images/home-contact-us/person.png'] {
+      bottom: 0;
+      height: 100vh;
+      left: 0;
+      object-fit: cover;
+      position: absolute;
+      z-index: 1111;
+
+			@media (width <= 1399px) {
+				display: none;
+			}
+    }
+
+	
+  > .bg {
+    align-items: center;
+		background-image: url('../../../images/home-contact-us/background.svg');
+    display: flex;
+    flex: 1;
+    padding: 20px 0;
+    position: relative;
+  }
+
+	.container {
+		direction: rtl;
+	}
+
+  h1 {
+    font-size: 45px;
+    font-weight: bold;
+		padding-top: 20px;
+    text-align: center;
+
+		@media (max-width: 992px) {
+			font-size: 40px;
+		}
+
+		@media (max-width: 576px) {
+			font-size: 35px;
+		}
+
+    .star {
+      display: block;
+      height: 50px;
+      margin: 0 auto 10px;
+      width: 50px;
+    }
+  }
+
+  form {
+    font-size: 20px;
+		direction: ltr;
+
+    label {
+      font-size: 20px;
+    }
+
+    .mb-5 {
+      position: relative;
+    }
+
+    .text-area-container,
+    textarea {
+      box-sizing: border-box;
+      height: 100%;
+      overflow: hidden;
+      resize: none;
+    }
+
+    input[type='email'],
+    input[type='text'],
+    input[type='number'],
+    textarea {
+      appearance: none;
+      background: #00000017;
+      background-clip: padding-box;
+      border: 0;
+      border-bottom: 3px solid $black;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      margin-bottom: 25px;
+      padding: 35px 15px 0;
+      transition: all 0.2s ease;
+      width: 100%;
+
+      ~ label {
+        color: $black;
+        cursor: text;
+        left: 15px;
+        position: absolute;
+        top: 15px;
+        transition: all 0.2s ease;
+      }
+
+      &:hover {
+        background: #00000024;
+      }
+
+      &:focus-visible,
+      &:not(:placeholder-shown) {
+        outline: none;
+
+        ~ label {
+          font-size: 15px;
+          opacity: 0.7;
+          top: 0;
+        }
+      }
+    }
+
+    input[type='email'],
+    input[type='text'],
+    input[type='number'] {
+      height: 70px;
+    }
+
+    input[type='email']:-webkit-autofill,
+    input[type='text']:-webkit-autofill,
+    input[type='number']:-webkit-autofill,
+    textarea:-webkit-autofill {
+      background-color: transparent !important;
+      box-shadow: 0 0 0 0 transparent inset !important;
+    }
+
+    .send-btn {
+      background: $black;
+      border-radius: 50px;
+      color: $white;
+      font-size: 15px;
+      overflow: hidden;
+      padding: 8px 45px;
+      transition: all 0.1s linear;
+
+      &:hover {
+        background: $white;
+        color: $black;
+      }
+
+      img[src='/build/shapes/common/yellow-star-light.svg'] {
+        display: none;
+        width: 15px;
+      }
+
+      img[src='/build/shapes/common/yellow-star-light.svg'].spinning {
+        animation: spin 1s linear infinite;
+        display: inline-block;
+
+        @keyframes spin {
+          0% {
+            transform: rotate(0deg);
+          }
+
+          100% {
+            transform: rotate(360deg);
+          }
+        }
+      }
+
+      img[src='/build/shapes/common/yellow-star-light.svg'].spinning-out {
+        animation: spin-out 1s linear 1 forwards;
+        display: inline-block;
+
+        @keyframes spin-out {
+          0% {
+            opacity: 1;
+            transform: scale(1);
+          }
+
+          50% {
+            opacity: 0.5;
+            transform: scale(50);
+          }
+
+          80% {
+            opacity: 0;
+            transform: scale(100);
+          }
+
+          100% {
+            display: none;
+            opacity: 0;
+            transform: scale(100);
+          }
+        }
+      }
+    }
+
+    .submit-btn-container {
+      align-items: center;
+      display: flex;
+      justify-content: space-between;
+
+      @media (width <= 1399px) {
+        align-items: unset;
+        flex-direction: column;
+        justify-content: unset;
+        text-align: center;
+      }
+
+      span {
+        color: $black;
+        font-size: 13px;
+      }
+
+      img[src='/build/shapes/common/black-arrow.svg'] {
+        transition: all 0.1s linear;
+        width: 80px;
+
+        &:hover {
+          transform: translateX(10px);
+        }
+
+        @media (width <= 1399px) {
+          height: 100px;
+          margin: 20px auto 0;
+          rotate: 90deg;
+        }
+      }
+    }
+
+    .error-message,
+    .success-message {
+      opacity: 0;
+      position: absolute;
+      right: -150vw;
+      top: 10px;
+      transition: all 1s linear;
+      z-index: 10;
+
+      p {
+        font-size: 15px;
+      }
+
+      &.active {
+        opacity: 1;
+        right: 0;
+      }
+    }
+  }
+}

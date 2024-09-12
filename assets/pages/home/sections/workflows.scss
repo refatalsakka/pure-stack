@@ -1,0 +1,242 @@
+@import './../../../vars';
+
+.home-workflows {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  min-height: 100vh;
+  padding: 30px 0;
+	margin-bottom: 50px;
+
+  h1 {
+    color: $black-title;
+    text-align: center;
+
+		@media (max-width: 992px) {
+			font-size: 40px;
+		}
+
+		@media (max-width: 576px) {
+			font-size: 35px;
+		}
+
+    &:hover {
+      span img {
+        top: -20px;
+      }
+    }
+
+    span {
+      position: relative;
+
+      img {
+        left: -5px;
+        position: absolute;
+        rotate: 25deg;
+        top: -25px;
+        transition: all 0.1s ease;
+      }
+    }
+  }
+
+  .rotating-container {
+    $circle-diameter: 500px;
+    $inner-circle-diameter: $circle-diameter - 100px;
+    $border-width: 20px;
+    $number-of-items: 8;
+
+    align-items: center;
+    display: flex;
+    gap: 1%;
+    justify-content: space-between;
+    margin-top: 100px;
+
+    @media (width <= 1399px) {
+      flex-direction: column;
+
+      .line {
+        align-items: center;
+        display: flex;
+        height: 300px;
+        justify-content: center;
+
+        img {
+          rotate: 90deg;
+          width: 250px;
+        }
+      }
+    }
+
+    .circle {
+      aspect-ratio: 1 / 1;
+      border: 5px dashed $yellow;
+      border-radius: 50%;
+      height: $circle-diameter;
+      position: relative;
+
+      .internal-circle {
+        animation: infinite-rotate 10s linear infinite;
+        border-bottom: 10px dashed $yellow;
+        border-left: 10px dashed transparent;
+        border-radius: 50%;
+        border-right: 10px dashed transparent;
+        border-top: 10px dashed $yellow;
+        height: $inner-circle-diameter;
+        left: 50%;
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        transform-origin: center;
+        width: $inner-circle-diameter;
+
+        @keyframes infinite-rotate {
+          from {
+            transform: translate(-50%, -50%) rotate(0deg);
+          }
+
+          to {
+            transform: translate(-50%, -50%) rotate(360deg);
+          }
+        }
+      }
+
+      .icon {
+        align-items: center;
+        background: white;
+        border-radius: 50%;
+        box-shadow: 0 0 7px #00000038;
+        cursor: pointer;
+        display: flex;
+        font-weight: bold;
+        height: 15%;
+        justify-content: center;
+        left: 42%;
+        line-height: 0;
+        position: absolute;
+        text-align: center;
+        top: 42%;
+        transform: rotate(calc(360deg / #{$number-of-items} * var(--i)))
+          translate(0, 20px)
+          rotate(calc(-360deg / #{$number-of-items} * var(--i)));
+        transform-origin: center center;
+        transition:
+          background-color 0.3s ease,
+          color 0.3s ease,
+          transform 1s ease;
+        user-select: none;
+        width: 15%;
+        z-index: 10;
+
+        &.active {
+          pointer-events: none;
+        }
+
+        &:hover:not(.active),
+        &.active {
+          background-color: $yellow;
+          color: $black;
+        }
+
+        img {
+          width: 40px;
+        }
+      }
+
+      &.in-center {
+        .icon {
+          transform: rotate(calc(360deg / #{$number-of-items} * var(--i)))
+            translate(-50%, -($circle-diameter / 2))
+            rotate(calc(-360deg / #{$number-of-items} * var(--i)));
+        }
+      }
+
+      .title {
+        left: 50%;
+        opacity: 0;
+        position: absolute;
+        text-align: center;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        transition: all 0.3s ease;
+        visibility: hidden;
+
+        &.active {
+          animation: fadeIn 1s ease-out forwards;
+        }
+      }
+
+      @media (width <= 720px) {
+        height: $circle-diameter - 100px;
+
+        .internal-circle {
+          height: $inner-circle-diameter - 100px;
+          width: $inner-circle-diameter - 100px;
+        }
+
+        .icon {
+          padding: 30px;
+        }
+
+        &.in-center {
+          .icon {
+            transform: rotate(calc(360deg / #{$number-of-items} * var(--i)))
+              translate(-50%, -(($circle-diameter - 100px) / 2))
+              rotate(calc(-360deg / #{$number-of-items} * var(--i)));
+          }
+        }
+      }
+
+      @media (width <= 576px) {
+        height: $circle-diameter - 200px;
+
+        .internal-circle {
+          height: $inner-circle-diameter - 200px;
+          width: $inner-circle-diameter - 200px;
+        }
+
+        &.in-center {
+          .icon {
+            transform: rotate(calc(360deg / #{$number-of-items} * var(--i)))
+              translate(-50%, -(($circle-diameter - 200px) / 2))
+              rotate(calc(-360deg / #{$number-of-items} * var(--i)));
+          }
+        }
+      }
+    }
+
+    .texts-container {
+      .text {
+        display: none;
+        opacity: 0;
+        visibility: hidden;
+
+        &.active {
+          animation: fadeIn 1s ease-out forwards;
+          display: block;
+        }
+      }
+
+      @media (width <= 1399px) {
+        text-align: center;
+      }
+    }
+  }
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      visibility: hidden;
+    }
+
+    1% {
+      display: block;
+      visibility: visible;
+    }
+
+    100% {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+}

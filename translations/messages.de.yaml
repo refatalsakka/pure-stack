@@ -1,0 +1,385 @@
+navbar:
+  home: Startseite
+  projects: Projekte
+  services: Dienstleistungen
+  about_us: Über uns
+  workflows: Workflows
+  values: Werte
+  contact: Kontakt
+  sign_up: Registrieren
+  terms_and_conditions: AGB
+  privacy_policy: Datenschutz
+  imprint: Impressum
+  web_design_contract: Webdesign-Vertrag
+  av_contract: AV-Vertrag
+  english: Englisch
+  german: Deutsch
+
+footer:
+  sub_title: Ihre gesamte Arbeit an einem Ort
+
+home:
+  title: Startseite
+  hero_section:
+    title:
+      span_1: Bevor wir beginnen
+      span_2: Verstehen wir Ihre Ziele
+    subtitle: '<p>Wir analysieren Ihre Bedürfnisse sorgfältig und bieten maßgeschneiderte Lösungen, die mit Ihren Zielen übereinstimmen, um effektive und nachhaltige Ergebnisse zu gewährleisten.</p>'
+  projects_section:
+    title: Unsere<span class="green-text"> kreative Bilanz</span>:<br>Eine Auswahl unserer Arbeiten.
+  services_section:
+    title:
+      1: Webentwicklung
+      2: UI-UX-Design
+      3: Datenbanksystem
+      4: Cloud Computing
+      5: SEO & Marketing
+    subtitle: "Unsere Leistungen: Das alles erledigen wir für Sie"
+    and_more: Und mehr
+    cafe_btn: Lass uns einen Cafe trinken
+    see_more: Mehr erfahren
+  workflows_section:
+    title: Wie wir arbeiten
+  values_section:
+    title: Was uns wichtig ist
+  services_contact:
+    title: We Do Like To Hear From You
+    form:
+      name: Name
+      email: Email
+      telephone_number: Telephone number
+      terms_read: Ich habe die <a href="/privacy-policy">Datenschutzerklärung</a> gelesen und stimme diesen zu.
+      your_message: Ihre Nachricht
+      send: Senden
+      error_message: Etwas ist schiefgelaufen, bitte versuchen Sie es erneut..
+      success_message: Ihre Nachricht wurde empfangen. Wir werden uns in Kürze bei Ihnen melden.
+
+imprint:
+  title: Impressum
+  legal_section:
+    title: Legal
+    company: "Firma: Sleeky Code UG (haftungsbeschränkt)"
+    registration_number: "Handelsregisternummer: HRB 264833 B"
+    court: "Registergericht: Amtsgericht Berlin (Charlottenburg)"
+    vat_id: "Umsatzsteuer-Identifikationsnummer gemäß § 27 a Umsatzsteuergesetz: DE369221495"
+    represented_by: "Vertreten durch: Refat Alsakka"
+  editorial_section:
+    title: Redaktionell verantwortlich
+    name: "Name: Refat Alsakka"
+    care_of: "c/o Sleeky Code UG"
+    address: "Anschrift: Mühlenstraße 8A, 14167 Berlin"
+  liability_section:
+    title: Haftung für Inhalte
+    content: "Die Inhalte unserer Seiten wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen."
+  eu_dispute_resolution:
+    title: EU-Streitschlichtung
+    content: "Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit: <a href=\"https://ec.europa.eu/consumers/odr/\" target=\"_blank\">https://ec.europa.eu/consumers/odr/</a>. Unsere E-Mail-Adresse finden Sie oben im Impressum."
+  consumer_dispute_resolution:
+    title: Verbraucherstreitbeilegung/Universalschlichtungsstelle
+    content: "Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen."
+  bank_details_section:
+    title: Bankverbindung
+  address_section:
+    title: Adresse
+    company: Sleeky Code UG
+    address: Mühlenstraße 8A, 14167 Berlin
+  contact_details_section:
+    title: Kontaktangaben
+    email: 'E-Mail: contact@sleekycode.com'
+    telefon: 'Telefon: 0176 35436667'
+  open_hours_section:
+    title: Öffnungszeiten
+    weekdays: 'Montag - Freitag: 9:00 - 16:00'
+
+privacy_policy:
+  title: "Datenschutzerklärung"
+  
+  # Section 1: Datenschutz auf einen Blick
+  section1_title: "1. Datenschutz auf einen Blick"
+  general_notices_title: "Allgemeine Hinweise"
+  general_notices_description: "Die folgenden Hinweise geben einen einfachen Überblick darüber, was mit Ihren personenbezogenen Daten passiert, wenn Sie diese Website besuchen. Personenbezogene Daten sind alle Daten, mit denen Sie persönlich identifiziert werden können. Ausführliche Informationen zum Thema Datenschutz entnehmen Sie unserer unter diesem Text aufgeführten Datenschutzerklärung."
+  
+  data_collection_title: "Datenerfassung auf dieser Website"
+  data_collection_responsible_question: "Wer ist verantwortlich für die Datenerfassung auf dieser Website?"
+  data_collection_responsible_answer: "Die Datenverarbeitung auf dieser Website erfolgt durch den Websitebetreiber. Dessen Kontaktdaten können Sie dem Abschnitt „Hinweis zur Verantwortlichen Stelle“ in dieser Datenschutzerklärung entnehmen."
+
+  data_capture_title: "Wie erfassen wir Ihre Daten?"
+  data_capture_manual: "Ihre Daten werden zum einen dadurch erhoben, dass Sie uns diese mitteilen. Hierbei kann es sich z. B. um Daten handeln, die Sie in ein Kontaktformular eingeben."
+  data_capture_automatic: "Andere Daten werden automatisch oder nach Ihrer Einwilligung beim Besuch der Website durch unsere IT-Systeme erfasst. Das sind vor allem technische Daten (z. B. Internetbrowser, Betriebssystem oder Uhrzeit des Seitenaufrufs). Die Erfassung dieser Daten erfolgt automatisch, sobald Sie diese Website betreten."
+  
+  data_usage_title: "Wofür nutzen wir Ihre Daten?"
+  data_usage_description: "Ein Teil der Daten wird erhoben, um eine fehlerfreie Bereitstellung der Website zu gewährleisten. Andere Daten können zur Analyse Ihres Nutzerverhaltens verwendet werden."
+  
+  rights_title: "Welche Rechte haben Sie bezüglich Ihrer Daten?"
+  rights_description: "Sie haben jederzeit das Recht, unentgeltlich Auskunft über Herkunft, Empfänger und Zweck Ihrer gespeicherten personenbezogenen Daten zu erhalten. Sie haben außerdem ein Recht, die Berichtigung oder Löschung dieser Daten zu verlangen. Wenn Sie eine Einwilligung zur Datenverarbeitung erteilt haben, können Sie diese Einwilligung jederzeit für die Zukunft widerrufen. Außerdem haben Sie das Recht, unter bestimmten Umständen die Einschränkung der Verarbeitung Ihrer personenbezogenen Daten zu verlangen. Des Weiteren steht Ihnen ein Beschwerderecht bei der zuständigen Aufsichtsbehörde zu."
+  rights_contact_hint: "Hierzu sowie zu weiteren Fragen zum Thema Datenschutz können Sie sich jederzeit an uns wenden."
+
+  analysis_tools_title: "Analyse-Tools und Tools von Drittanbietern"
+  analysis_tools_description: "Beim Besuch dieser Website kann Ihr Surf-Verhalten statistisch ausgewertet werden. Das geschieht vor allem mit sogenannten Analyseprogrammen."
+  analysis_tools_hint: "Detaillierte Informationen zu diesen Analyseprogrammen finden Sie in der folgenden Datenschutzerklärung."
+
+  # Section 2: Hosting
+  section2_title: "2. Hosting"
+  hosting_provider_title: "AWS (Amazon Web Services)"
+  hosting_provider_description: "Wir hosten unsere Website bei AWS (Amazon Web Services). Anbieter ist die Amazon Web Services, Inc., 410 Terry Avenue North, Seattle WA 98109, USA (nachfolgend AWS)."
+  hosting_provider_link: "Details finden Sie in der Datenschutzerklärung von AWS: <a href=\"https://aws.amazon.com/de/privacy/?nc1=h_ls\" target=\"_blank\">AWS Datenschutzerklärung</a>."
+  hosting_provider_legal_basis: "Die Nutzung von AWS erfolgt auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO. Wir haben ein berechtigtes Interesse an der möglichst zuverlässigen Darstellung unserer Website."
+
+  processing_agreement_title: "Auftragsverarbeitung"
+  processing_agreement_description: "Wir haben einen Vertrag über Auftragsverarbeitung (AVV) mit dem oben genannten Anbieter geschlossen. Hierbei handelt es sich um einen datenschutzrechtlich vorgeschriebenen Vertrag, der gewährleistet, dass dieser die personenbezogenen Daten unserer Websitebesucher nur nach unseren Weisungen und unter Einhaltung der DSGVO verarbeitet."
+
+  # Section 3: Allgemeine Hinweise und Pflichtinformationen
+  section3_title: "3. Allgemeine Hinweise und Pflicht­informationen"
+  privacy_title: "Datenschutz"
+  privacy_intro: |
+    Die Betreiber dieser Seiten nehmen den Schutz Ihrer persönlichen Daten sehr ernst. Wir behandeln Ihre personenbezogenen Daten vertraulich und entsprechend den gesetzlichen Datenschutzvorschriften sowie dieser Datenschutzerklärung.
+  privacy_data_collection: |
+    Wenn Sie diese Website benutzen, werden verschiedene personenbezogene Daten erhoben. Personenbezogene Daten sind Daten, mit denen Sie persönlich identifiziert werden können. Die vorliegende Datenschutzerklärung erläutert, welche Daten wir erheben und wofür wir sie nutzen. Sie erläutert auch, wie und zu welchem Zweck das geschieht.
+  privacy_data_transfer_warning: |
+    Wir weisen darauf hin, dass die Datenübertragung im Internet (z. B. bei der Kommunikation per E-Mail) Sicherheitslücken aufweisen kann. Ein lückenloser Schutz der Daten vor dem Zugriff durch Dritte ist nicht möglich.
+
+  responsible_notice_title: "Hinweis zur verantwortlichen Stelle"
+  responsible_person_info: "Die verantwortliche Stelle für die Datenverarbeitung auf dieser Website ist:"
+  responsible_name: "Refat Alsakka"
+  responsible_address: "c/o Sleeky Code UG (haftungsbeschränkt)<br>Mühlenstraße 8A<br>14167 Berlin<br>Germany"
+  responsible_contact: "Telefon: 0176 35436667"
+  responsible_email: "E-Mail: refat.alsakka@sleekycode.com"
+  
+  storage_duration_title: "Speicherdauer"
+  storage_duration_description: "Soweit innerhalb dieser Datenschutzerklärung keine speziellere Speicherdauer genannt wurde, verbleiben Ihre personenbezogenen Daten bei uns, bis der Zweck für die Datenverarbeitung entfällt. Wenn Sie ein berechtigtes Löschersuchen geltend machen oder eine Einwilligung zur Datenverarbeitung widerrufen, werden Ihre Daten gelöscht, sofern wir keine anderen rechtlich zulässigen Gründe für die Speicherung Ihrer personenbezogenen Daten haben (z. B. steuer- oder handelsrechtliche Aufbewahrungsfristen); im letztgenannten Fall erfolgt die Löschung nach Fortfall dieser Gründe."
+  
+  legal_basis_general_title: "Allgemeine Hinweise zu den Rechtsgrundlagen der Datenverarbeitung auf dieser Website"
+  legal_basis_general_description: "Sofern Sie in die Datenverarbeitung eingewilligt haben, verarbeiten wir Ihre personenbezogenen Daten auf Grundlage von Art. 6 Abs. 1 lit. a DSGVO bzw. Art. 9 Abs. 2 lit. a DSGVO, sofern besondere Datenkategorien nach Art. 9 Abs. 1 DSGVO verarbeitet werden. Im Falle einer ausdrücklichen Einwilligung in die Übertragung personenbezogener Daten in Drittstaaten erfolgt die Datenverarbeitung außerdem auf Grundlage von Art. 49 Abs. 1 lit. a DSGVO. Sofern Sie in die Speicherung von Cookies oder in den Zugriff auf Informationen in Ihr Endgerät (z. B. via Device-Fingerprinting) eingewilligt haben, erfolgt die Datenverarbeitung zusätzlich auf Grundlage von § 25 Abs. 1 TTDSG. Die Einwilligung ist jederzeit widerrufbar. Sind Ihre Daten zur Vertragserfüllung oder zur Durchführung vorvertraglicher Maßnahmen erforderlich, verarbeiten wir Ihre Daten auf Grundlage des Art. 6 Abs. 1 lit. b DSGVO. Des Weiteren verarbeiten wir Ihre Daten, sofern diese zur Erfüllung einer rechtlichen Verpflichtung erforderlich sind auf Grundlage von Art. 6 Abs. 1 lit. c DSGVO. Die Datenverarbeitung kann ferner auf Grundlage unseres berechtigten Interesses nach Art. 6 Abs. 1 lit. f DSGVO erfolgen. Über die jeweils im Einzelfall einschlägigen Rechtsgrundlagen wird in den folgenden Absätzen dieser Datenschutzerklärung informiert."
+
+  data_transfer_notice_title: "Hinweis zur Datenweitergabe in die USA und sonstige Drittstaaten"
+  data_transfer_notice_description: "Wir verwenden unter anderem Tools von Unternehmen mit Sitz in den USA oder sonstigen datenschutzrechtlich nicht sicheren Drittstaaten. Wenn diese Tools aktiv sind, können Ihre personenbezogene Daten in diese Drittstaaten übertragen und dort verarbeitet werden. Wir weisen darauf hin, dass in diesen Ländern kein mit der EU vergleichbares Datenschutzniveau garantiert werden kann. Beispielsweise sind US-Unternehmen dazu verpflichtet, personenbezogene Daten an Sicherheitsbehörden herauszugeben, ohne dass Sie als Betroffener hiergegen gerichtlich vorgehen könnten. Es kann daher nicht ausgeschlossen werden, dass US-Behörden (z. B. Geheimdienste) Ihre auf US-Servern befindlichen Daten zu Überwachungszwecken verarbeiten, auswerten und dauerhaft speichern. Wir haben auf diese Verarbeitungstätigkeiten keinen Einfluss."
+
+  consent_revocation_title: "Widerruf Ihrer Einwilligung zur Datenverarbeitung"
+  consent_revocation_description: "Viele Datenverarbeitungsvorgänge sind nur mit Ihrer ausdrücklichen Einwilligung möglich. Sie können eine bereits erteilte Einwilligung jederzeit widerrufen. Die Rechtmäßigkeit der bis zum Widerruf erfolgten Datenverarbeitung bleibt vom Widerruf unberührt."
+
+  objection_right_title: "Widerspruchsrecht gegen die Datenerhebung in besonderen Fällen sowie gegen Direktwerbung (Art. 21 DSGVO)"
+  objection_right_description: "WENN DIE DATENVERARBEITUNG AUF GRUNDLAGE VON ART. 6 ABS. 1 LIT. E ODER F DSGVO ERFOLGT, HABEN SIE JEDERZEIT DAS RECHT, AUS GRÜNDEN, DIE SICH AUS IHRER BESONDEREN SITUATION ERGEBEN, GEGEN DIE VERARBEITUNG IHRER PERSONENBEZOGENEN DATEN WIDERSPRUCH EINZULEGEN; DIES GILT AUCH FÜR EIN AUF DIESE BESTIMMUNGEN GESTÜTZTES PROFILING. DIE JEWEILIGE RECHTSGRUNDLAGE, AUF DENEN EINE VERARBEITUNG BERUHT, ENTNEHMEN SIE DIESER DATENSCHUTZERKLÄRUNG. WENN SIE WIDERSPRUCH EINLEGEN, WERDEN WIR IHRE BETROFFENEN PERSONENBEZOGENEN DATEN NICHT MEHR VERARBEITEN, ES SEI DENN, WIR KÖNNEN ZWINGENDE SCHUTZWÜRDIGE GRÜNDE FÜR DIE VERARBEITUNG NACHWEISEN, DIE IHRE INTERESSEN, RECHTE UND FREIHEITEN ÜBERWIEGEN ODER DIE VERARBEITUNG DIENT DER GELTENDMACHUNG, AUSÜBUNG ODER VERTEIDIGUNG VON RECHTSANSPRÜCHEN (WIDERSPRUCH NACH ART. 21 ABS. 1 DSGVO)."
+
+  objection_direct_marketing_title: "Widerspruch gegen Direktwerbung"
+  objection_direct_marketing_description: "WERDEN IHRE PERSONENBEZOGENEN DATEN VERARBEITET, UM DIREKTWERBUNG ZU BETREIBEN, SO HABEN SIE DAS RECHT, JEDERZEIT WIDERSPRUCH GEGEN DIE VERARBEITUNG SIE BETREFFENDER PERSONENBEZOGENER DATEN ZUM ZWECKE DERARTIGER WERBUNG EINZULEGEN; DIES GILT AUCH FÜR DAS PROFILING, SOWEIT ES MIT SOLCHER DIREKTWERBUNG IN VERBINDUNG STEHT. WENN SIE WIDERSPRECHEN, WERDEN IHRE PERSONENBEZOGENEN DATEN ANSCHLIESSEND NICHT MEHR ZUM ZWECKE DER DIREKTWERBUNG VERWENDET (WIDERSPRUCH NACH ART. 21 ABS. 2 DSGVO)."
+
+  complaint_right_title: "Beschwerde­recht bei der zuständigen Aufsichts­behörde"
+  complaint_right_description: "Im Falle von Verstößen gegen die DSGVO steht den Betroffenen ein Beschwerderecht bei einer Aufsichtsbehörde, insbesondere in dem Mitgliedstaat ihres gewöhnlichen Aufenthalts, ihres Arbeitsplatzes oder des Orts des mutmaßlichen Verstoßes zu. Das Beschwerderecht besteht unbeschadet anderweitiger verwaltungsrechtlicher oder gerichtlicher Rechtsbehelfe."
+
+  data_portability_title: "Recht auf Daten­übertrag­barkeit"
+  data_portability_description: "Sie haben das Recht, Daten, die wir auf Grundlage Ihrer Einwilligung oder in Erfüllung eines Vertrags automatisiert verarbeiten, an sich oder an einen Dritten in einem gängigen, maschinenlesbaren Format aushändigen zu lassen. Sofern Sie die direkte Übertragung der Daten an einen anderen Verantwortlichen verlangen, erfolgt dies nur, soweit es technisch machbar ist."
+
+  access_deletion_correction_title: "Auskunft, Löschung und Berichtigung"
+  access_deletion_correction_description: "Sie haben im Rahmen der geltenden gesetzlichen Bestimmungen jederzeit das Recht auf unentgeltliche Auskunft über Ihre gespeicherten personenbezogenen Daten, deren Herkunft und Empfänger und den Zweck der Datenverarbeitung und ggf. ein Recht auf Berichtigung oder Löschung dieser Daten. Hierzu sowie zu weiteren Fragen zum Thema personenbezogene Daten können Sie sich jederzeit an uns wenden."
+
+  processing_restriction_title: "Recht auf Einschränkung der Verarbeitung"
+  processing_restriction_description: "Sie haben das Recht, die Einschränkung der Verarbeitung Ihrer personenbezogenen Daten zu verlangen. Hierzu können Sie sich jederzeit an uns wenden. Das Recht auf Einschränkung der Verarbeitung besteht in folgenden Fällen:"
+
+  restriction_case1: "Wenn Sie die Richtigkeit Ihrer bei uns gespeicherten personenbezogenen Daten bestreiten, benötigen wir in der Regel Zeit, um dies zu überprüfen. Für die Dauer der Prüfung haben Sie das Recht, die Einschränkung der Verarbeitung Ihrer personenbezogenen Daten zu verlangen."
+  restriction_case2: "Wenn die Verarbeitung Ihrer personenbezogenen Daten unrechtmäßig geschah/geschieht, können Sie statt der Löschung die Einschränkung der Datenverarbeitung verlangen."
+  restriction_case3: "Wenn wir Ihre personenbezogenen Daten nicht mehr benötigen, Sie sie jedoch zur Ausübung, Verteidigung oder Geltendmachung von Rechtsansprüchen benötigen, haben Sie das Recht, statt der Löschung die Einschränkung der Verarbeitung Ihrer personenbezogenen Daten zu verlangen."
+  restriction_case4: "Wenn Sie einen Widerspruch nach Art. 21 Abs. 1 DSGVO eingelegt haben, muss eine Abwägung zwischen Ihren und unseren Interessen vorgenommen werden. Solange noch nicht feststeht, wessen Interessen überwiegen, haben Sie das Recht, die Einschränkung der Verarbeitung Ihrer personenbezogenen Daten zu verlangen."
+  processing_restriction_notice: "Wenn Sie die Verarbeitung Ihrer personenbezogenen Daten eingeschränkt haben, dürfen diese Daten – von ihrer Speicherung abgesehen – nur mit Ihrer Einwilligung oder zur Geltendmachung, Ausübung oder Verteidigung von Rechtsansprüchen oder zum Schutz der Rechte einer anderen natürlichen oder juristischen Person oder aus Gründen eines wichtigen öffentlichen Interesses der Europäischen Union oder eines Mitgliedstaats verarbeitet werden."
+
+  ssl_tls_encryption_title: "SSL- bzw. TLS-Verschlüsselung"
+  ssl_tls_encryption_description: "Diese Seite nutzt aus Sicherheitsgründen und zum Schutz der Übertragung vertraulicher Inhalte, wie zum Beispiel Bestellungen oder Anfragen, die Sie an uns als Seitenbetreiber senden, eine SSL- bzw. TLS-Verschlüsselung. Eine verschlüsselte Verbindung erkennen Sie daran, dass die Adresszeile des Browsers von „http://“ auf „https://“ wechselt und an dem Schloss-Symbol in Ihrer Browserzeile."
+
+  ssl_tls_notice: "Wenn die SSL- bzw. TLS-Verschlüsselung aktiviert ist, können die Daten, die Sie an uns übermitteln, nicht von Dritten mitgelesen werden."
+
+  # Section 4: Datenerfassung auf dieser Website
+  section4_title: "4. Datenerfassung auf dieser Website"
+  cookies_title: "Cookies"
+  cookies_description: "Unsere Internetseiten verwenden so genannte „Cookies“. Cookies sind kleine Textdateien und richten auf Ihrem Endgerät keinen Schaden an. Sie werden entweder vorübergehend für die Dauer einer Sitzung (Session-Cookies) oder dauerhaft (permanente Cookies) auf Ihrem Endgerät gespeichert. Session-Cookies werden nach Ende Ihres Besuchs automatisch gelöscht. Permanente Cookies bleiben auf Ihrem Endgerät gespeichert, bis Sie diese selbst löschen oder eine automatische Löschung durch Ihren Webbrowser erfolgt."
+  cookies_third_party: "Teilweise können auch Cookies von Drittunternehmen auf Ihrem Endgerät gespeichert werden, wenn Sie unsere Seite betreten (Third-Party-Cookies). Diese ermöglichen uns oder Ihnen die Nutzung bestimmter Dienstleistungen des Drittunternehmens (z. B. Cookies zur Abwicklung von Zahlungsdienstleistungen)."
+  cookies_usage: "Cookies haben verschiedene Funktionen. Zahlreiche Cookies sind technisch notwendig, da bestimmte Websitefunktionen ohne diese nicht funktionieren würden (z. B. die Warenkorbfunktion oder die Anzeige von Videos). Andere Cookies dienen dazu, das Nutzerverhalten auszuwerten oder Werbung anzuzeigen."
+  cookies_consent: "Cookies, die zur Durchführung des elektronischen Kommunikationsvorgangs, zur Bereitstellung bestimmter, von Ihnen erwünschter Funktionen (z. B. für die Warenkorbfunktion) oder zur Optimierung der Website (z. B. Cookies zur Messung des Webpublikums) erforderlich sind (notwendige Cookies), werden auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO gespeichert, sofern keine andere Rechtsgrundlage angegeben wird. Der Websitebetreiber hat ein berechtigtes Interesse an der Speicherung von notwendigen Cookies zur technisch fehlerfreien und optimierten Bereitstellung seiner Dienste. Sofern eine Einwilligung zur Speicherung von Cookies und vergleichbaren Wiedererkennungstechnologien abgefragt wurde, erfolgt die Verarbeitung ausschließlich auf Grundlage dieser Einwilligung (Art. 6 Abs. 1 lit. a DSGVO und § 25 Abs. 1 TTDSG); die Einwilligung ist jederzeit widerrufbar."
+  cookies_browser_settings: "Sie können Ihren Browser so einstellen, dass Sie über das Setzen von Cookies informiert werden und Cookies nur im Einzelfall erlauben, die Annahme von Cookies für bestimmte Fälle oder generell ausschließen sowie das automatische Löschen der Cookies beim Schließen des Browsers aktivieren. Bei der Deaktivierung von Cookies kann die Funktionalität dieser Website eingeschränkt sein."
+  cookies_disabling: "Soweit Cookies von Drittunternehmen oder zu Analysezwecken eingesetzt werden, werden wir Sie hierüber im Rahmen dieser Datenschutzerklärung gesondert informieren und ggf. eine Einwilligung abfragen."
+
+  contact_form_title: "Kontaktformular"
+  contact_form_description: "Wenn Sie uns per Kontaktformular Anfragen zukommen lassen, werden Ihre Angaben aus dem Anfrageformular inklusive der von Ihnen dort angegebenen Kontaktdaten zwecks Bearbeitung der Anfrage und für den Fall von Anschlussfragen bei uns gespeichert. Diese Daten geben wir nicht ohne Ihre Einwilligung weiter."
+  contact_form_processing: "Die Verarbeitung dieser Daten erfolgt auf Grundlage von Art. 6 Abs. 1 lit. b DSGVO, sofern Ihre Anfrage mit der Erfüllung eines Vertrags zusammenhängt oder zur Durchführung vorvertraglicher Maßnahmen erforderlich ist. In allen übrigen Fällen beruht die Verarbeitung auf unserem berechtigten Interesse an der effektiven Bearbeitung der an uns gerichteten Anfragen (Art. 6 Abs. 1 lit. f DSGVO) oder auf Ihrer Einwilligung (Art. 6 Abs. 1 lit. a DSGVO) sofern diese abgefragt wurde; die Einwilligung ist jederzeit widerrufbar."
+  contact_form_data_retention: "Die von Ihnen im Kontaktformular eingegebenen Daten verbleiben bei uns, bis Sie uns zur Löschung auffordern, Ihre Einwilligung zur Speicherung widerrufen oder der Zweck für die Datenspeicherung entfällt (z. B. nach abgeschlossener Bearbeitung Ihrer Anfrage). Zwingende gesetzliche Bestimmungen – insbesondere Aufbewahrungsfristen – bleiben unberührt."
+
+  recaptcha_title: "Google reCAPTCHA"
+  recaptcha_description: Wir verwenden Google reCAPTCHA auf unserer Website, um sicherzustellen, dass die Dateneingaben auf unserer Website durch Menschen und nicht durch automatisierte Programme erfolgen. Google reCAPTCHA analysiert das Verhalten des Websitebesuchers anhand verschiedener Merkmale, um automatisierte Bots zu erkennen. Dabei werden unter anderem IP-Adresse, Verweildauer auf der Website und Mausbewegungen erfasst. Die Datenverarbeitung erfolgt auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO, da wir ein berechtigtes Interesse an der Absicherung unserer Website gegen missbräuchliche Zugriffe und SPAM haben. Weitere Informationen zur Datenverarbeitung durch Google reCAPTCHA finden Sie in der <a href=\"https://policies.google.com/privacy?hl=de\" target=\"_blank\">Datenschutzerklärung von Google</a>.
+
+  email_phone_inquiry_title: "Anfrage per E-Mail oder Telefon"
+  email_phone_inquiry_description: "Wenn Sie uns per E-Mail oder Telefon kontaktieren, wird Ihre Anfrage inklusive aller daraus hervorgehenden personenbezogenen Daten (Name, Anfrage) zum Zwecke der Bearbeitung Ihres Anliegens bei uns gespeichert und verarbeitet. Diese Daten geben wir nicht ohne Ihre Einwilligung weiter."
+  email_phone_inquiry_processing: "Die Verarbeitung dieser Daten erfolgt auf Grundlage von Art. 6 Abs. 1 lit. b DSGVO, sofern Ihre Anfrage mit der Erfüllung eines Vertrags zusammenhängt oder zur Durchführung vorvertraglicher Maßnahmen erforderlich ist. In allen übrigen Fällen beruht die Verarbeitung auf unserem berechtigten Interesse an der effektiven Bearbeitung der an uns gerichteten Anfragen (Art. 6 Abs. 1 lit. f DSGVO) oder auf Ihrer Einwilligung (Art. 6 Abs. 1 lit. a DSGVO) sofern diese abgefragt wurde; die Einwilligung ist jederzeit widerrufbar."
+  email_phone_fax_data_retention: "Die von Ihnen an uns per Kontaktanfragen übersandten Daten verbleiben bei uns, bis Sie uns zur Löschung auffordern, Ihre Einwilligung zur Speicherung widerrufen oder der Zweck für die Datenspeicherung entfällt (z. B. nach abgeschlossener Bearbeitung Ihres Anliegens). Zwingende gesetzliche Bestimmungen – insbesondere gesetzliche Aufbewahrungsfristen – bleiben unberührt."
+
+  whatsapp_communication_title: "Kommunikation via WhatsApp"
+  whatsapp_communication_description: "Für die Kommunikation mit unseren Kunden und sonstigen Dritten nutzen wir unter anderem den Instant-Messaging-Dienst WhatsApp. Anbieter ist die WhatsApp Ireland Limited, 4 Grand Canal Square, Grand Canal Harbour, Dublin 2, Irland."
+  whatsapp_communication_security: "Die Kommunikation erfolgt über eine Ende-zu-Ende-Verschlüsselung (Peer-to-Peer), die verhindert, dass WhatsApp oder sonstige Dritte Zugriff auf die Kommunikationsinhalte erlangen können. WhatsApp erhält jedoch Zugriff auf Metadaten, die im Zuge des Kommunikationsvorgangs entstehen (z. B. Absender, Empfänger und Zeitpunkt). Wir weisen ferner darauf hin, dass WhatsApp nach eigener Aussage, personenbezogene Daten seiner Nutzer mit seiner in den USA ansässigen Konzernmutter Meta teilt."
+  whatsapp_communication_link: "Weitere Details zur Datenverarbeitung finden Sie in der Datenschutzrichtlinie von WhatsApp unter: <a href=\"https://www.whatsapp.com/legal/privacy-policy?lang=de\" target=\"_blank\">WhatsApp Datenschutzrichtlinie</a>."
+  whatsapp_communication_legal_basis: "Der Einsatz von WhatsApp erfolgt auf Grundlage unseres berechtigten Interesses an einer möglichst schnellen und effektiven Kommunikation mit Kunden, Interessenten und sonstigen Geschäfts- und Vertragspartnern (Art. 6 Abs. 1 lit. f DSGVO). Sofern eine entsprechende Einwilligung abgefragt wurde, erfolgt die Datenverarbeitung ausschließlich auf Grundlage der Einwilligung; diese ist jederzeit mit Wirkung für die Zukunft widerrufbar."
+  whatsapp_data_retention: "Die zwischen und auf WhatsApp ausgetauschten Kommunikationsinhalte verbleiben bei uns, bis Sie uns zur Löschung auffordern, Ihre Einwilligung zur Speicherung widerrufen oder der Zweck für die Datenspeicherung entfällt (z. B. nach abgeschlossener Bearbeitung Ihrer Anfrage). Zwingende gesetzliche Bestimmungen – insbesondere Aufbewahrungsfristen – bleiben unberührt."
+  whatsapp_business_use: "Wir nutzen WhatsApp in der Variante „WhatsApp Business“."
+  whatsapp_data_transfer_to_usa: "Die Datenübertragung in die USA wird auf die Standardvertragsklauseln der EU-Kommission gestützt. Details finden Sie hier: <a href=\"https://www.whatsapp.com/legal/business-data-transfer-addendum/?lang=de\" target=\"_blank\">Ergänzung für WhatsApp Business Datenübermittlungen</a>."
+  whatsapp_no_sync: "Wir haben unsere WhatsApp-Accounts so eingestellt, dass es keinen automatischen Datenabgleich mit dem Adressbuch auf den im Einsatz befindlichen Smartphones macht."
+  whatsapp_avv: "Wir haben einen Vertrag über Auftragsverarbeitung (AVV) mit dem oben genannten Anbieter geschlossen."
+
+  microsoft_bookings_title: "Online-Terminbuchungssystem via Microsoft Bookings"
+  microsoft_bookings_description: "Wir nutzen den Service Microsoft Bookings, der Teil von Microsoft Office 365 ist und von Microsoft Ireland Operations Limited bereitgestellt wird. Dieser Service ermöglicht Ihnen die einfache Online-Terminvereinbarung. Durch die Nutzung der Online-Buchungsfunktion wird eine Verbindung zum Service hergestellt. Die Informationen, die Sie im Terminvereinbarungsformular angeben, werden an Microsoft übertragen."
+  microsoft_privacy_link: "Details zur Datenverarbeitung finden Sie in Microsofts Datenschutzerklärung unter: <a href=\"https://privacy.microsoft.com/de-de/privacystatement\" target=\"_blank\">Microsoft privacy statement</a>."
+  microsoft_avv: "Wir betonen, dass wir eine Auftragsverarbeitungsvereinbarung mit Microsoft abgeschlossen haben. Ihre Daten werden innerhalb der EU von Microsoft gespeichert. In einigen Fällen kann Microsoft auf Daten in Drittländern zugreifen, und Subunternehmer von Microsoft in diesen Ländern könnten Daten verarbeiten. Microsoft hat zusätzliche Vereinbarungen getroffen, um Datenschutz auch bei Verarbeitung durch Drittstaatenanbieter zu gewährleisten."
+  microsoft_third_country_data_transfer_notice: "Bitte beachten Sie, dass bei Übermittlung in Drittländer (einschließlich der USA) die Möglichkeit besteht, dass Behörden dort Daten zu Kontroll- und Überwachungszwecken verarbeiten. Solche Fälle basieren auf Ihrer Einwilligung gemäß Artikel 49 Absatz 1 Buchstabe a) der Datenschutz-Grundverordnung (DS-GVO)."
+
+  # Section 5: Audio- und Videokonferenzen
+  section5_title: "5. Audio- und Videokonferenzen"
+  conference_data_processing_title: "Datenverarbeitung"
+  conference_tools_intro: |
+    Für die Kommunikation mit unseren Kunden setzen wir unter anderem Online-Konferenz-Tools ein. Die im Einzelnen von uns genutzten Tools sind unten aufgelistet. Wenn Sie mit uns per Video- oder Audiokonferenz via Internet kommunizieren, werden Ihre personenbezogenen Daten von uns und dem Anbieter des jeweiligen Konferenz-Tools erfasst und verarbeitet.
+  conference_tools_user_data_collection: |
+    Die Konferenz-Tools erfassen dabei alle Daten, die Sie zur Nutzung der Tools bereitstellen/einsetzen (E-Mail-Adresse und/oder Ihre Telefonnummer). Ferner verarbeiten die Konferenz-Tools die Dauer der Konferenz, Beginn und Ende (Zeit) der Teilnahme an der Konferenz, Anzahl der Teilnehmer und sonstige „Kontextinformationen“ im Zusammenhang mit dem Kommunikationsvorgang (Metadaten).
+  conference_tools_technical_data_collection: |
+    Des Weiteren verarbeitet der Anbieter des Tools alle technischen Daten, die zur Abwicklung der Online-Kommunikation erforderlich sind. Dies umfasst insbesondere IP-Adressen, MAC-Adressen, Geräte-IDs, Gerätetyp, Betriebssystemtyp und -version, Client-Version, Kameratyp, Mikrofon oder Lautsprecher sowie die Art der Verbindung.
+  conference_tools_content_data_storage: |
+    Sofern innerhalb des Tools Inhalte ausgetauscht, hochgeladen oder in sonstiger Weise bereitgestellt werden, werden diese ebenfalls auf den Servern der Tool-Anbieter gespeichert. Zu solchen Inhalten zählen insbesondere Cloud-Aufzeichnungen, Chat-/Sofortnachrichten, Voicemails, hochgeladene Fotos und Videos, Dateien, Whiteboards und andere Informationen, die während der Nutzung des Dienstes geteilt werden.
+  conference_tools_data_processing_disclaimer: |
+    Bitte beachten Sie, dass wir nicht vollumfänglich Einfluss auf die Datenverarbeitungsvorgänge der verwendeten Tools haben. Unsere Möglichkeiten richten sich maßgeblich nach der Unternehmenspolitik des jeweiligen Anbieters. Weitere Hinweise zur Datenverarbeitung durch die Konferenztools entnehmen Sie den Datenschutzerklärungen der jeweils eingesetzten Tools, die wir unter diesem Text aufgeführt haben.
+  conference_tools_purpose_title: "Zweck und Rechtsgrundlagen"
+  conference_tools_purpose_description: |
+    Die Konferenz-Tools werden genutzt, um mit angehenden oder bestehenden Vertragspartnern zu kommunizieren oder bestimmte Leistungen gegenüber unseren Kunden anzubieten (Art. 6 Abs. 1 lit. b DSGVO). Des Weiteren dient der Einsatz der Tools der allgemeinen Vereinfachung und Beschleunigung der Kommunikation mit uns bzw. unserem Unternehmen (berechtigtes Interesse im Sinne von Art. 6 Abs. 1 lit. f DSGVO). Soweit eine Einwilligung abgefragt wurde, erfolgt der Einsatz der betreffenden Tools auf Grundlage dieser Einwilligung; die Einwilligung ist jederzeit mit Wirkung für die Zukunft widerrufbar.
+  conference_tools_storage_title: "Speicherdauer"
+  conference_tools_storage_description1: |
+    Die unmittelbar von uns über die Video- und Konferenz-Tools erfassten Daten werden von unseren Systemen gelöscht, sobald Sie uns zur Löschung auffordern, Ihre Einwilligung zur Speicherung widerrufen oder der Zweck für die Datenspeicherung entfällt. Gespeicherte Cookies verbleiben auf Ihrem Endgerät, bis Sie sie löschen. Zwingende gesetzliche Aufbewahrungsfristen bleiben unberührt.
+  conference_tools_storage_description2: |
+    Auf die Speicherdauer Ihrer Daten, die von den Betreibern der Konferenz-Tools zu eigenen Zwecken gespeichert werden, haben wir keinen Einfluss. Für Einzelheiten dazu informieren Sie sich bitte direkt bei den Betreibern der Konferenz-Tools.
+  conference_tools_used_title: "Eingesetzte Konferenz-Tools"
+  conference_tools_used_description: |
+    Wir setzen folgende Konferenz-Tools ein:
+
+  conference_tools_jitsi_title: "Jitsi Meet"
+  conference_tools_jitsi_description: |
+    Wir nutzen Jitsi Meet. Wenn Sie über Jitsi Meet mit uns kommunizieren, werden alle mit diesem Kommunikationsvorgang verbundenen Daten ausschließlich auf Servern innerhalb der Europäischen Union bzw. einem datenschutzrechtlich sicheren Drittstaat verarbeitet.
+
+  conference_tools_avv_title: "Auftragsverarbeitung"
+  conference_tools_avv_description: |
+    Wir haben einen Vertrag über Auftragsverarbeitung (AVV) mit dem oben genannten Anbieter geschlossen. Hierbei handelt es sich um einen datenschutzrechtlich vorgeschriebenen Vertrag, der gewährleistet, dass dieser die personenbezogenen Daten unserer Websitebesucher nur nach unseren Weisungen und unter Einhaltung der DSGVO verarbeitet.
+
+services:
+  web_development:
+    title: "Webentwicklung"
+    summary_title: "Maßgeschneiderte Website-Entwicklung"
+    description: ""
+    summary: "Wir bieten umfassende Webentwicklungsdienste an, einschließlich responsivem Design, E-Commerce-Lösungen, CMS-Integration und benutzerdefinierten Webanwendungen. Unser Ziel ist es, Websites zu erstellen, die nicht nur optisch ansprechend, sondern auch hoch funktional und für die Leistung auf allen Geräten optimiert sind."
+
+  ui_ux_design:
+    title: "UI/UX-Design"
+    summary_title: "Gestaltung von Benutzeroberflächen und Benutzererfahrungen"
+    description: ""
+    summary: "Unsere UI/UX-Design-Dienstleistungen konzentrieren sich darauf, ansprechende und intuitive Benutzererlebnisse zu schaffen. Wir führen gründliche Benutzerforschung durch, entwickeln detaillierte Wireframes und erstellen visuell ansprechende Designs, die die Benutzerinteraktion verbessern. Unsere Designs zielen darauf ab, die Benutzerfreundlichkeit zu verbessern und gleichzeitig die Markenidentität widerzuspiegeln."
+
+  domain_registration:
+    title: "Domain-Registrierung und -Verwaltung"
+    summary_title: "Hilfe bei der Verwaltung von Domains"
+    description: ""
+    summary: "Wir bieten umfassende Dienstleistungen zur Domainregistrierung und -verwaltung an, um Ihnen zu helfen, die perfekte Domain für Ihr Unternehmen zu sichern. Unsere Leistungen umfassen Domainregistrierung, DNS-Verwaltung und den Schutz der Domain-Privatsphäre, die alle über vertrauenswürdige Plattformen abgewickelt werden. Wir stellen sicher, dass Ihre Domain effizient verwaltet und sicher ist, damit Sie sich auf Ihr Geschäft konzentrieren können."
+
+  cloud_computing_services:
+    title: "Cloud-Computing-Dienste"
+    summary_title: "Bereitstellung von Cloud-Lösungen"
+    description: ""
+    summary: "Unsere Cloud-Computing-Dienste ermöglichen es Ihrem Unternehmen, effizient zu skalieren und dabei eine zuverlässige Online-Präsenz aufrechtzuerhalten. Wir bieten Cloud-Hosting-Lösungen, Servermanagement, Cloud-Migration sowie Backup- und Notfallwiederherstellungsdienste, die auf vertrauenswürdiger und leistungsstarker Infrastruktur basieren. Unser Team sorgt dafür, dass Ihre Cloud-Umgebung sicher, leistungsoptimiert und bereit ist, die Anforderungen Ihres Unternehmens zu erfüllen."
+
+  database_management:
+    title: "Datenbankverwaltung"
+    summary_title: "Einrichten und Verwalten von Datenbanken"
+    description: ""
+    summary: "Wir sind auf die Datenbankverwaltung spezialisiert und bieten Dienstleistungen wie Datenbankdesign, Optimierung und Sicherheit an. Unsere Lösungen sorgen dafür, dass Ihre Datenbanken robust, skalierbar und sicher sind. Wir bieten auch Backup- und Wiederherstellungslösungen an, um Ihre Daten zu schützen und die Geschäftskontinuität sicherzustellen."
+
+  seo_digital_marketing:
+    title: "SEO & Digitales Marketing"
+    summary_title: "Verbesserung der Sichtbarkeit Ihrer Website"
+    description: ""
+    summary: "Unsere SEO- und Digital-Marketing-Dienstleistungen sind darauf ausgelegt, Ihre Online-Präsenz zu stärken und gezielten Traffic auf Ihre Website zu lenken. Wir bieten Suchmaschinenoptimierung, Pay-per-Click-Werbung, Social-Media-Marketing und Content-Marketing-Strategien an, um Ihre Sichtbarkeit zu erhöhen und Ihr Geschäft auszubauen."
+
+  support_maintenance:
+    title: "Support und Wartung"
+    summary_title: "Fortlaufender Support für Ihre Website"
+    description: ""
+    summary: "Wir bieten umfassende Support- und Wartungsdienste an, um sicherzustellen, dass Ihre Website jederzeit reibungslos funktioniert. Unsere Dienstleistungen umfassen regelmäßige Updates, technischen Support, Leistungsüberwachung und Sicherheitsüberprüfungen. Wir sind bestrebt, Ihre Online-Präsenz sicher und optimiert für Spitzenleistungen zu halten."
+
+work_stages:
+  discovery_planning:
+    title: "Entdeckung & Planung"
+    summary_title: "Initiale Projektplanung"
+    summary: "Wir beginnen mit einer gründlichen Analyse der Kundenbedürfnisse, definieren klare Projektziele und skizzieren den Umfang, um einen gut strukturierten Ansatz zu gewährleisten. Diese Phase legt das Fundament für ein erfolgreiches Projekt, indem Erwartungen ausgerichtet und der Rahmen für eine strategische Umsetzung geschaffen wird."
+
+  research_strategy:
+    title: "Forschung & Strategie"
+    summary_title: "Strategische Forschung"
+    summary: "In dieser Phase führen wir umfassende Forschung und Analyse durch, um einen strategischen Plan zu erstellen. Dazu gehören Marktanalysen, Wettbewerbsbenchmarking und die Identifizierung wichtiger Trends. Die gewonnenen Erkenntnisse leiten die Entwicklung einer fundierten Strategie, die mit den Zielen des Kunden übereinstimmt."
+
+  design_prototyping:
+    title: "Design & Prototyping"
+    summary_title: "Visualisierung der Lösung"
+    summary: "Wir gehen weiter, indem wir detaillierte Designs und interaktive Prototypen erstellen. Diese visuellen Darstellungen ermöglichen es uns, alle Beteiligten abzustimmen, Feedback zu sammeln und Anpassungen vorzunehmen, bevor die Entwicklung beginnt. So stellen wir sicher, dass das Endprodukt sowohl funktionale als auch ästhetische Anforderungen erfüllt."
+
+  development_implementation:
+    title: "Entwicklung & Umsetzung"
+    summary_title: "Lösungserstellung"
+    summary: "Unser Entwicklungsteam verwandelt die genehmigten Designs in eine voll funktionsfähige Lösung. In dieser Phase schreiben wir sauberen, effizienten Code und integrieren verschiedene Systeme, um sicherzustellen, dass die Lösung skalierbar, sicher und leistungsfähig ist und unter unterschiedlichen Bedingungen funktioniert."
+
+  testing_quality_assurance:
+    title: "Tests & Qualitätssicherung"
+    summary_title: "Qualitätssicherung"
+    summary: "Vor der Bereitstellung wird die Lösung einer strengen Prüfung unterzogen. Diese Phase umfasst funktionale Tests, Leistungstests und Benutzerakzeptanztests, um sicherzustellen, dass das Produkt alle Anforderungen erfüllt, fehlerfrei ist und auf allen beabsichtigten Plattformen ein nahtloses Benutzererlebnis bietet."
+
+  launch_deployment:
+    title: "Start & Bereitstellung"
+    summary_title: "Freigabe der Lösung"
+    summary: "Wir starten die Lösung sorgfältig und stellen sie in der Live-Umgebung bereit. Diese Phase umfasst die abschließende Konfiguration, Leistungstests und die Sicherstellung, dass alles für den Benutzerzugriff optimiert ist. Wir überwachen die Bereitstellung eng, um eventuelle sofortige Probleme nach dem Start zu beheben."
+
+  maintenance_support:
+    title: "Wartung & Support"
+    summary_title: "Kontinuierlicher Support"
+    summary: "Nach dem Start bieten wir laufende Wartungs- und Supportleistungen an. Dazu gehören regelmäßige Updates, Leistungsüberwachung und die Behebung auftretender Probleme. Unser Ziel ist es, sicherzustellen, dass die Lösung funktionsfähig, sicher und auf dem neuesten Stand der Technik bleibt."
+
+  review_optimization:
+    title: "Überprüfung & Optimierung"
+    summary_title: "Nach-Launch-Optimierung"
+    summary: "Nachdem die Lösung live ist, überprüfen wir ihre Leistung, sammeln Benutzerfeedback und identifizieren Bereiche zur Verbesserung. Diese Phase ist entscheidend, um Anpassungen und Optimierungen vorzunehmen, die die Funktionalität, Benutzererfahrung und Gesamteffektivität verbessern und den langfristigen Erfolg sicherstellen."
+
+work_values:
+  clean_code:
+    title: "Sauberer Code"
+    summary: "Schreiben von Code, der leicht zu lesen, zu warten und für zukünftige Verbesserungen skalierbar ist."
+
+  security:
+    title: "Sicherheit"
+    summary: "Entwicklung von Lösungen mit Sicherheit als Kernfunktion, um Daten zu schützen und die Systemintegrität zu gewährleisten."
+
+  performance:
+    title: "Leistung"
+    summary: "Optimierung jedes Aspekts unserer Arbeit, um schnelle, reaktionsfähige und effiziente Systeme zu gewährleisten."
+
+  scalability:
+    title: "Skalierbarkeit"
+    summary: "Entwicklung von Systemen, die mit den Bedürfnissen unserer Kunden wachsen und sich anpassen können, ohne die Leistung zu beeinträchtigen."
+
+  automation:
+    title: "Automatisierung"
+    summary: "Implementierung intelligenter Automatisierung zur Straffung von Prozessen, Reduzierung manueller Arbeit und Steigerung der Effizienz."
+
+  testing:
+    title: "Tests"
+    summary: "Wir glauben an rigorose Tests, um Stabilität, Funktionalität und fehlerfreie Erlebnisse zu gewährleisten."
+
+  documentation:
+    title: "Dokumentation"
+    summary: "Bereitstellung klarer und detaillierter Dokumentationen für eine einfache Übergabe und zukünftige Entwicklungen."
+
+  modularity:
+    title: "Modularität"
+    summary: "Entwicklung modularer Lösungen zur Gewährleistung von Flexibilität, Wiederverwendbarkeit und einfacheren zukünftigen Updates."
+
+  maintainability:
+    title: "Wartbarkeit"
+    summary: "Fokus auf die Entwicklung von Systemen, die im Laufe der Zeit leicht zu warten und zu erweitern sind."
+
+  data_integrity:
+    title: "Datenintegrität"
+    summary: "Gewährleistung der Genauigkeit, Konsistenz und Sicherheit von Daten in allen Systemen und Prozessen."

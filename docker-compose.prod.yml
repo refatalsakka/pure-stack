@@ -1,0 +1,7 @@
+services:
+  apache:
+    build:
+      dockerfile: docker/Dockerfile.prod.apache
+    env_file:
+      - .env
+      - .env.prod

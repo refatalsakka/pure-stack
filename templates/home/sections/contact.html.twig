@@ -1,0 +1,69 @@
+<section id="contact" class="home-contact-us">
+	<h1>
+		<span class="star"></span>
+		{{ "home.services_contact.title"|trans }}</h1>
+	<div class="bg">
+		<img src="{{ asset("build/images/home-contact-us/person.png") }}" alt="person"/>
+		<div class="container">
+			<div class="row">
+				<div class="col-xxl-8 col-xl-12">
+					<div class="content">
+						<form action="/contact" method="post" target="_blank">
+							<div class="row">
+								<div class="col-md-6">
+									<div class="mb-5">
+										<input type="text" name="name" id="contactInputName" placeholder=" " required>
+										<label for="contactInputName">{{ "home.services_contact.form.name"|trans }}</label>
+									</div>
+									<div class="mb-5">
+										<input type="email" name="email" id="contactInputEmail" placeholder=" " required>
+										<label for="contactInputEmail">{{ "home.services_contact.form.email"|trans }}</label>
+									</div>
+									<div class="mb-5">
+										<input type="number" name="number" id="contactInputTelefonNumber" placeholder=" ">
+										<label for="contactInputTelefonNumber">{{ "home.services_contact.form.telephone_number"|trans }}</label>
+									</div>
+									<div class="form-check mb-5">
+										<input class="form-check-input" type="checkbox" value="" id="contactInputTermsRead" required>
+										<label class="form-check-label" for="contactInputTermsRead">
+											{{ "home.services_contact.form.terms_read"|trans|raw }}
+										</label>
+									</div>
+									<div class="mb-5">
+										<input type="hidden" name="_csrf_token" value="{{ csrf_token('contact_form') }}">
+										<div id="g-recaptcha" data-sitekey="6Lfm5DIqAAAAAIIcRvM40ClXLOBAQxTmeUk757P6"></div>
+										<input type="hidden" id="contactInputRecaptchaTokenElm">
+									</div>
+									<div class="error-message">
+										<p class="p-2 bg-danger text-white text-center rounded">
+											{{ "home.services_contact.form.error_message"|trans }}
+										</p>
+									</div>
+									<div class="success-message">
+										<p class="p-2 bg-dark text-white text-center rounded">
+											{{ "home.services_contact.form.success_message"|trans }}
+										</p>
+									</div>
+									<div class="submit-btn-container">
+										<button type="submit" class="btn send-btn g-recaptcha disabled-btn">
+											{{ "home.services_contact.form.send"|trans }}
+											<img src="{{ asset("build/shapes/common/yellow-star-light.svg") }}" alt="loading"/>
+										</button>
+										<img src="{{ asset("build/shapes/common/black-arrow.svg") }}" alt="arrow"/>
+										<span>contact@sleekycode.com</span>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="mb-5 text-area-container">
+										<textarea id="contactInputYourMessage" name="message" rows="6" placeholder=" "></textarea>
+										<label for="contactInputYourMessage">{{ "home.services_contact.form.your_message"|trans }}</label>
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

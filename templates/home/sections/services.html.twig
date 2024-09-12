@@ -1,0 +1,52 @@
+<section id="services" class="home-services">
+	<div class="services-hero">
+		<strong>{{ "home.services_section.subtitle"|trans }}</strong>
+		<h1>
+			{{ "home.services_section.title.1"|trans }}
+			<br>
+			<img src="{{ asset("build/shapes/home-service-section/arrow.svg") }}" alt="arrow"/>
+			{{ "home.services_section.title.2"|trans }}
+			<br>
+			{{ "home.services_section.title.3"|trans }}
+			<span class="star"></span>
+			<br>
+			{{ "home.services_section.title.4"|trans }}
+			<br>
+			{{ "home.services_section.title.5"|trans }}
+			<img src="{{ asset("build/shapes/home-service-section/arrow.svg") }}" alt="arrow" class="reverse"/>
+		</h1>
+		<strong>{{ "home.services_section.and_more"|trans }}</strong>
+		<img src="{{ asset("build/shapes/home-service-section/curved-arrow.svg") }}" alt="curved arrow" class="curved-arrow"/>
+	</div>
+	<div class="services-container">
+		{% for service in services %}
+			<div class="service service-{{ loop.index }}{% if loop.index != 1 %} active{% endif %}">
+				<div class="container">
+					<div class="row">
+						<div class="col-xl-6 col-lg-12">
+							<div class="content">
+								<h2>{{ ('services.' ~ service.translationKey ~ '.title')|trans }}</h2>
+								<a href="#contact" class="btn cafe-btn">{{ "home.services_section.cafe_btn"|trans }}</a>
+							</div>
+						</div>
+						<div class="col-xl-6 col-lg-12">
+							<div class="content">
+								<h3>{{ ('services.' ~ service.translationKey ~ '.summary_title')|trans }}</h3>
+								<p>{{ ('services.' ~ service.translationKey ~ '.summary')|trans }}</p>
+								{# <a href="{{ current_locale }}/services{{ service.slug }}">{{ "home.services_section.see_more"|trans }}</a> #}
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		{% endfor %}
+		<img src="{{ asset("build/icons/back-arrow-svgrepo-com.svg") }}" alt="back" class="back"/>
+		<div class="squirrel-grass">
+			<img src="{{ asset("build/shapes/common/grass.svg") }}" alt="grass"/>
+			<img src="{{ asset("build/images/common/squirrel.png") }}" alt="squirrel"/>
+		</div>
+		{% for i in 1..7 %}
+			<img src="{{ asset("build/shapes/home-service-section/cafe-" ~ i ~ ".svg") }}" alt="cafe {{ i }}" class="cafe-bottom-right cafe-bottom-right-{{ i }}"/>
+		{% endfor %}
+	</div>
+</section>

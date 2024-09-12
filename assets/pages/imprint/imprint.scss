@@ -1,0 +1,106 @@
+@import './../../vars';
+
+.info-section {
+  position: relative;
+}
+
+h2 {
+  color: $green;
+  overflow-wrap: break-word;
+  word-break: break-all;
+}
+
+p:not(:last-of-type) {
+  margin-bottom: 0;
+}
+
+.address-section {
+  height: 100vh;
+  position: relative;
+	margin-bottom: 50px;
+
+  img[src='/build/shapes/common/grass.svg'] {
+    position: absolute;
+    z-index: -1;
+
+    @media (width <= 490px) {
+      display: none;
+    }
+  }
+
+  img[src='/build/shapes/common/grass.svg']:nth-last-of-type(1) {
+    right: 0;
+    top: -50px;
+
+    @media (width <= 720px) {
+      top: -40px;
+    }
+  }
+
+  img[src='/build/shapes/common/grass.svg']:nth-last-of-type(2) {
+    right: 278px;
+    rotate: -10deg;
+    top: -25px;
+
+    @media (width <= 992px) {
+      display: none;
+    }
+  }
+
+  .bg {
+    background: $dark-green;
+    height: 100vh;
+
+    @media (width >= 720px) {
+      clip-path: ellipse(100vw 70vh at 90vw 71vh);
+      display: flex;
+    }
+
+    > div {
+      height: 100%;
+      width: 50%;
+
+      @media (width <= 720px) {
+        height: 50vh;
+        width: 100%;
+      }
+    }
+
+    .info {
+      align-items: center;
+      color: $white;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      padding: 12px;
+      position: relative;
+
+      @media (width <= 720px) {
+				align-items: start;
+      }
+
+      &::after,
+      &::before {
+        content: '';
+        height: 100%;
+        position: absolute;
+        top: 0;
+        width: 30px;
+
+        @media (width <= 992px) {
+          display: none;
+        }
+      }
+
+      &::before {
+        background: $yellow;
+        left: 10px;
+      }
+
+      &::after {
+        background: $green;
+        left: 50px;
+      }
+    }
+  }
+}

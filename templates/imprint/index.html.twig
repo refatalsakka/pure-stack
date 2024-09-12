@@ -1,0 +1,96 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+    {{ "imprint.title"|trans }}
+{% endblock %}
+
+{% block meta %}
+	<meta name="description" content="Imprint of Sleeky Code UG (haftungsbeschränkt). Find all legal information about our company, including contact details and business registration." />
+{% endblock %}
+
+{% block stylesheets %}
+	{{ parent() }}
+	{{ encore_entry_link_tags("imprint") }}
+{% endblock %}
+
+{% block javascripts %}
+	{{ parent() }}
+	{{ encore_entry_script_tags("imprint") }}
+{% endblock %}
+
+{% block body %}
+	<div class="container info-section">
+		<h1 class="mt-5 mb-5">Impressum</h1>
+		<div class="yellow-green-star-title-right">
+			<img src="{{ asset("build/shapes/common/yellow-star-light.svg") }}" alt="yellow star light"/>
+			<img src="{{ asset("build/shapes/common/green-star.svg") }}" alt="green star"/>
+		</div>
+		<div class="row">
+			<div class="col-lg-6">
+				<div class="row">
+					<div class="col-md-12 mb-3">
+						<h2>{{ 'imprint.legal_section.title'|trans }}</h2>
+						<p>{{ 'imprint.legal_section.company'|trans }}</p>
+						<p>{{ 'imprint.legal_section.registration_number'|trans }}</p>
+						<p>{{ 'imprint.legal_section.court'|trans }}</p>
+						<p>{{ 'imprint.legal_section.vat_id'|trans }}</p>
+						<p>{{ 'imprint.legal_section.represented_by'|trans }}</p>
+					</div>
+					<div class="col-md-12 mb-3">
+						<h2>{{ 'imprint.editorial_section.title'|trans }}</h2>
+						<p>{{ 'imprint.editorial_section.name'|trans }}</p>
+						<p>{{ 'imprint.editorial_section.care_of'|trans }}</p>
+						<p>{{ 'imprint.editorial_section.address'|trans }}</p>
+					</div>
+					<div class="col-md-12 mb-3">
+						<h2>{{ 'imprint.bank_details_section.title'|trans }}</h2>
+						<p>Sleeky Code UG</p>
+						<p>IBAN: DE40 1001 8000 0208 8089 01</p>
+						<p>BIC: FNOMDEB2XXX</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-6">
+				<div class="row">
+					<div class="col-md-12 mb-3">
+						<h2>{{ 'imprint.eu_dispute_resolution.title'|trans }}</h2>
+						<p>{{ 'imprint.eu_dispute_resolution.content'|trans|raw }}</p>
+					</div>
+					<div class="col-md-12 mb-3">
+						<h2>{{ 'imprint.consumer_dispute_resolution.title'|trans }}</h2>
+						<p>{{ 'imprint.consumer_dispute_resolution.content'|trans }}</p>
+					</div>
+					<div class="col-md-12 mb-3">
+						<h2>{{ 'imprint.liability_section.title'|trans }}</h2>
+						<p>{{ 'imprint.liability_section.content'|trans }}</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="address-section mt-5">
+		<img src="{{ asset("build/shapes/common/grass.svg") }}" alt="grass"/>
+		<img src="{{ asset("build/shapes/common/grass.svg") }}" alt="grass"/>
+		<div class="bg">
+			<div class="map">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2432.7139755159988!2d13.259214576675628!3d52.42998007203765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a85a34a788a28d%3A0x485f89190d0da1c7!2sM%C3%BChlenstra%C3%9Fe%208A%2C%2014167%20Berlin%2C%20Germany!5e0!3m2!1sen!2seg!4v1724924326014!5m2!1sen!2seg" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+			</div>
+			<div class="info">
+				<div>
+					<h2>{{ 'imprint.address_section.title'|trans }}</h2>
+					<p>{{ 'imprint.address_section.company'|trans }}</p>
+					<p>{{ 'imprint.address_section.address'|trans }}</p>
+				</div>
+				<div>
+					<h2>{{ 'imprint.contact_details_section.title'|trans }}</h2>
+					<p>{{ 'imprint.contact_details_section.email'|trans }}</p>
+					<p>{{ 'imprint.contact_details_section.telefon'|trans }}</p>
+				</div>
+				<div>
+					<h2>{{ 'imprint.open_hours_section.title'|trans }}</h2>
+					<p>{{ 'imprint.open_hours_section.weekdays'|trans }}</p>
+				</div>
+			</div>
+		</div>
+	</div>
+{% endblock %}

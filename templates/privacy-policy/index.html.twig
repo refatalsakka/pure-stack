@@ -1,0 +1,188 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+    {{ "privacy_policy.title"|trans }}
+{% endblock %}
+
+{% block meta %}
+	<meta name="description" content="Privacy Policy of Sleeky Code UG (haftungsbeschränkt). Learn how we collect, use, and protect your personal data in compliance with data protection laws." />
+{% endblock %}
+
+{% block stylesheets %}
+	{{ parent() }}
+	{{ encore_entry_link_tags("privacy-policy") }}
+{% endblock %}
+
+{% block javascripts %}
+	{{ parent() }}
+	{{ encore_entry_script_tags("privacy-policy") }}
+{% endblock %}
+
+
+{% block body %}
+	<div class="container privacy-policy-section">
+		<h1 class="mt-5 mb-5">{{ 'privacy_policy.title'|trans }}</h1>
+		<div class="yellow-green-star-title-right">
+			<img src="{{ asset('build/shapes/common/yellow-star-light.svg') }}" alt="{{ 'privacy_policy.yellow_star_alt'|trans }}"/>
+			<img src="{{ asset('build/shapes/common/green-star.svg') }}" alt="{{ 'privacy_policy.green_star_alt'|trans }}"/>
+		</div>
+		<div>
+			<h2 class="mt-5">{{ 'privacy_policy.section1_title'|trans }}</h2>
+			<h3>{{ 'privacy_policy.general_notices_title'|trans }}</h3>
+			<p>{{ 'privacy_policy.general_notices_description'|trans }}</p>
+
+			<h3>{{ 'privacy_policy.data_collection_title'|trans }}<br>{{ 'privacy_policy.data_collection_responsible_question'|trans }}</h3>
+			<p>{{ 'privacy_policy.data_collection_responsible_answer'|trans }}</p>
+
+			<h3>{{ 'privacy_policy.data_capture_title'|trans }}</h3>
+			<p>{{ 'privacy_policy.data_capture_manual'|trans }}</p>
+			<p>{{ 'privacy_policy.data_capture_automatic'|trans }}</p>
+
+			<h3>{{ 'privacy_policy.data_usage_title'|trans }}</h3>
+			<p>{{ 'privacy_policy.data_usage_description'|trans }}</p>
+
+			<h3>{{ 'privacy_policy.rights_title'|trans }}</h3>
+			<p>{{ 'privacy_policy.rights_description'|trans }}</p>
+			<p>{{ 'privacy_policy.rights_contact_hint'|trans }}</p>
+
+			<h3>{{ 'privacy_policy.analysis_tools_title'|trans }}</h3>
+			<p>{{ 'privacy_policy.analysis_tools_description'|trans }}</p>
+			<p>{{ 'privacy_policy.analysis_tools_hint'|trans }}</p>
+		</div>
+		<div>
+			<h2 class="mt-5">{{ 'privacy_policy.section2_title'|trans }}</h2>
+			<h3>{{ 'privacy_policy.hosting_provider_title'|trans }}</h3>
+			<p>{{ 'privacy_policy.hosting_provider_description'|trans }}</p>
+			<p>{{ 'privacy_policy.hosting_provider_link'|trans|raw }}
+			<p>{{ 'privacy_policy.hosting_provider_legal_basis'|trans }}
+
+			<h3>{{ 'privacy_policy.processing_agreement_title'|trans }}</h3>
+			<p>{{ 'privacy_policy.processing_agreement_description'|trans }}</p>
+		</div>
+		<div>
+			<h2 class="mt-5">{{ 'privacy_policy.section3_title'|trans }}</h2>
+			<h3>{{ 'privacy_policy.privacy_title'|trans }}</h3>
+			<p>{{ 'privacy_policy.privacy_intro'|trans }}</p>
+			<p>{{ 'privacy_policy.privacy_data_collection'|trans }}</p>
+			<p>{{ 'privacy_policy.privacy_data_transfer_warning'|trans }}</p>
+
+			<h3>{{ 'privacy_policy.responsible_notice_title'|trans }}</h3>
+			<p>{{ 'privacy_policy.responsible_person_info'|trans }}</p>
+			<p>
+				<strong>{{ 'privacy_policy.responsible_name'|trans }}</strong><br>
+				{{ 'privacy_policy.responsible_address'|trans|raw }}<br>
+			</p>
+			<p>
+				{{ 'privacy_policy.responsible_contact'|trans }}<br>
+				{{ 'privacy_policy.responsible_email'|trans }}
+			</p>
+
+			<h3>{{ 'privacy_policy.storage_duration_title'|trans }}</h3>
+			<p>{{ 'privacy_policy.storage_duration_description'|trans }}</p>
+
+			<h3>{{ 'privacy_policy.legal_basis_general_title'|trans }}</h3>
+			<p>{{ 'privacy_policy.legal_basis_general_description'|trans }}</p>
+
+			<h3>{{ 'privacy_policy.data_transfer_notice_title'|trans }}</h3>
+			<p>{{ 'privacy_policy.data_transfer_notice_description'|trans }}</p>
+
+			<h3>{{ 'privacy_policy.consent_revocation_title'|trans }}</h3>
+			<p>{{ 'privacy_policy.consent_revocation_description'|trans }}</p>
+
+			<h3>{{ 'privacy_policy.objection_right_title'|trans }}</h3>
+			<p>{{ 'privacy_policy.objection_right_description'|trans }}</p>
+			<p>{{ 'privacy_policy.objection_direct_marketing_description'|trans }}</p>
+
+			<h3>{{ 'privacy_policy.complaint_right_title'|trans }}</h3>
+			<p>{{ 'privacy_policy.complaint_right_description'|trans }}</p>
+
+			<h3>{{ 'privacy_policy.data_portability_title'|trans }}</h3>
+			<p>{{ 'privacy_policy.data_portability_description'|trans }}</p>
+
+			<h3>{{ 'privacy_policy.access_deletion_correction_title'|trans }}</h3>
+			<p>{{ 'privacy_policy.access_deletion_correction_description'|trans }}</p>
+
+			<h3>{{ 'privacy_policy.processing_restriction_title'|trans }}</h3>
+			<p>{{ 'privacy_policy.processing_restriction_description'|trans }}</p>
+			<ul>
+				<li>{{ 'privacy_policy.restriction_case1'|trans }}</li>
+				<li>{{ 'privacy_policy.restriction_case2'|trans }}</li>
+				<li>{{ 'privacy_policy.restriction_case3'|trans }}</li>
+				<li>{{ 'privacy_policy.restriction_case4'|trans }}</li>
+			</ul>
+			<p>{{ 'privacy_policy.processing_restriction_notice'|trans }}</p>
+
+			<h3>{{ 'privacy_policy.ssl_tls_encryption_title'|trans }}</h3>
+			<p>{{ 'privacy_policy.ssl_tls_encryption_description'|trans }}</p>
+			<p>{{ 'privacy_policy.ssl_tls_notice'|trans }}</p>
+		</div>
+		<div>
+			<h2 class="mt-5">{{ 'privacy_policy.section4_title'|trans }}</h2>
+			<h3>{{ 'privacy_policy.cookies_title'|trans }}</h3>
+			<p>{{ 'privacy_policy.cookies_description'|trans }}</p>
+			<p>{{ 'privacy_policy.cookies_third_party'|trans }}</p>
+			<p>{{ 'privacy_policy.cookies_usage'|trans }}</p>
+			<p>{{ 'privacy_policy.cookies_consent'|trans }}</p>
+			<p>{{ 'privacy_policy.cookies_browser_settings'|trans }}</p>
+			<p>{{ 'privacy_policy.cookies_disabling'|trans }}</p>
+
+			<h3>{{ 'privacy_policy.contact_form_title'|trans }}</h3>
+			<p>{{ 'privacy_policy.contact_form_description'|trans }}</p>
+			<p>{{ 'privacy_policy.contact_form_processing'|trans }}</p>
+			<p>{{ 'privacy_policy.contact_form_data_retention'|trans }}</p>
+
+			<h3>{{ 'privacy_policy.recaptcha_title'|trans }}</h3>
+			<p>{{ 'privacy_policy.recaptcha_description'|trans|raw }}</p>
+
+			<h3>{{ 'privacy_policy.email_phone_inquiry_title'|trans }}</h3>
+			<p>{{ 'privacy_policy.email_phone_inquiry_description'|trans }}</p>
+			<p>{{ 'privacy_policy.email_phone_inquiry_processing'|trans }}</p>
+			<p>{{ 'privacy_policy.email_phone_fax_data_retention'|trans }}</p>
+
+			<h3>{{ 'privacy_policy.whatsapp_communication_title'|trans }}</h3>
+			<p>{{ 'privacy_policy.whatsapp_communication_description'|trans }}</p>
+			<p>{{ 'privacy_policy.whatsapp_communication_security'|trans }}</p>
+			<p>{{ 'privacy_policy.whatsapp_communication_link'|trans|raw }}</p>
+			<p>{{ 'privacy_policy.whatsapp_communication_legal_basis'|trans }}</p>
+			<p>{{ 'privacy_policy.whatsapp_data_retention'|trans }}</p>
+			<p>{{ 'privacy_policy.whatsapp_business_use'|trans }}</p>
+			<p>{{ 'privacy_policy.whatsapp_data_transfer_to_usa'|trans|raw }}</p>
+			<p>{{ 'privacy_policy.whatsapp_no_sync'|trans }}</p>
+			<p>{{ 'privacy_policy.whatsapp_avv'|trans }}</p>
+
+			<h3>{{ 'privacy_policy.microsoft_bookings_title'|trans }}</h3>
+			<p>{{ 'privacy_policy.microsoft_bookings_description'|trans }}</p>
+			<p>{{ 'privacy_policy.microsoft_privacy_link'|trans|raw }}</p>
+			<p>{{ 'privacy_policy.microsoft_avv'|trans }}</p>
+			<p>{{ 'privacy_policy.microsoft_third_country_data_transfer_notice'|trans }}</p>
+
+		</div>
+
+		<!-- Section 5: Audio- und Videokonferenzen -->
+		<div>
+			<h2 class="mt-5">{{ 'privacy_policy.section5_title'|trans }}</h2>
+			<h3>{{ 'privacy_policy.conference_data_processing_title'|trans }}</h3>
+			<p>{{ 'privacy_policy.conference_tools_intro'|trans }}</p>
+			<p>{{ 'privacy_policy.conference_tools_user_data_collection'|trans }}</p>
+			<p>{{ 'privacy_policy.conference_tools_technical_data_collection'|trans }}</p>
+			<p>{{ 'privacy_policy.conference_tools_content_data_storage'|trans }}</p>
+			<p>{{ 'privacy_policy.conference_tools_data_processing_disclaimer'|trans }}</p>
+
+			<h3>{{ 'privacy_policy.conference_tools_purpose_title'|trans }}</h3>
+			<p>{{ 'privacy_policy.conference_tools_purpose_description'|trans }}</p>
+
+			<h3>{{ 'privacy_policy.conference_tools_storage_title'|trans }}</h3>
+			<p>{{ 'privacy_policy.conference_tools_storage_description1'|trans }}</p>
+			<p>{{ 'privacy_policy.conference_tools_storage_description2'|trans }}</p>
+
+			<h3>{{ 'privacy_policy.conference_tools_used_title'|trans }}</h3>
+			<p>{{ 'privacy_policy.conference_tools_used_description'|trans }}<p>
+
+			<h3>{{ 'privacy_policy.conference_tools_jitsi_title'|trans }}</h3>
+			<p>{{ 'privacy_policy.conference_tools_jitsi_description'|trans }}<p>
+
+			<h3>{{ 'privacy_policy.conference_tools_avv_title'|trans }}</h3>
+			<p>{{ 'privacy_policy.conference_tools_avv_description'|trans }}<p>
+		</div>
+	</div>
+{% endblock %}

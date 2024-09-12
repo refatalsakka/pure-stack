@@ -1,0 +1,30 @@
+<section id="values" class="home-work-values">
+	<div class="container-xl">
+		<div class="grid-container">
+			{% for value in workValues %}
+				<div class="grid-item">
+					<div class="flip-card active">
+						<div class="flip-card-inner">
+							<div class="flip-card-front">
+								<img src="{{ asset('build/icons/home-work-values/' ~ value.icon ~ '.png') }}" alt="{{ ('work_values.' ~ value.translationKey ~ '.title')|trans }}">
+								<h2>{{ ('work_values.' ~ value.translationKey ~ '.title')|trans }}</h2>
+							</div>
+							<div class="flip-card-back">
+								<p>{{ ('work_values.' ~ value.translationKey ~ '.summary')|trans }}</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				{% if loop.index == 5 %}
+					<div class="grid-item wide">
+						<h1>{{ "home.values_section.title"|trans }}
+							<span>
+								!<img src="{{ asset("build/shapes/common/small-grass-left.svg") }}" alt="small grass"/>
+							</span>
+						</h1>
+					</div>
+				{% endif %}
+			{% endfor %}
+		</div>
+	</div>
+</section>

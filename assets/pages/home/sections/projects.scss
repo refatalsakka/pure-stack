@@ -1,0 +1,136 @@
+@import './../../../vars';
+
+.home-projects {
+	margin-bottom: 50px;
+
+  @media (min-width: 992px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+  }
+
+  h1 {
+    font-size: 50px;
+    margin-bottom: 40px;
+
+		@media (max-width: 992px) {
+			font-size: 40px;
+			text-align: center;
+		}
+
+    @media (max-width: 576px) {
+      font-size: 35px;
+      margin-bottom: 20px;
+    }
+  }
+
+  .gallery-wrapper-cards {
+    display: none;
+
+    .card {
+      border-radius: 10px;
+      overflow: hidden;
+
+      p {
+        font-size: 15px;
+      }
+
+      a {
+        color: $white;
+
+        img {
+          transition: scale 0.5s ease;
+          width: 100%;
+        }
+
+        .card-img-overlay {
+          background-color: $black;
+          opacity: 0.5;
+        }
+      }
+
+      &:hover img {
+        scale: 1.1;
+      }
+
+      &:not(:first-of-type) {
+        margin-top: 30px;
+      }
+    }
+  }
+
+  .gallery-wrapper {
+    position: relative;
+    width: 100vw;
+
+    .star {
+      height: 70px;
+      position: absolute;
+      right: 18vw;
+      top: -110px;
+      width: 70px;
+
+      /* stylelint-disable-next-line media-feature-range-notation */
+      @media (max-width: 992px) {
+        width: 50px;
+      }
+
+      /* stylelint-disable-next-line media-feature-range-notation */
+      @media (max-width: 576px) {
+        display: none;
+      }
+    }
+
+    .splide__slide {
+      border-radius: 10px;
+
+      .splide-slide-image-container {
+        border-radius: 10px;
+        overflow: hidden;
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      h3 {
+        color: $black-title;
+        margin-top: 15px;
+      }
+
+      img {
+        border-radius: 10px;
+        height: 400px;
+        transition: scale 0.2s linear;
+        width: 500px;
+      }
+
+      span {
+        background-color: $green;
+        display: block;
+        height: 5px;
+        transition: width 0.5s ease;
+        width: 0;
+      }
+
+      &:hover span {
+        width: 100%;
+      }
+
+      &:hover img {
+        scale: 1.1;
+      }
+    }
+  }
+
+  @media (max-width: 992px) {
+    .gallery-wrapper-cards {
+      display: block;
+    }
+
+    .gallery-wrapper {
+      display: none;
+    }
+  }
+}

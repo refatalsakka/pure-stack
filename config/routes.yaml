@@ -1,0 +1,15 @@
+controllers:
+    resource:
+        path: ../src/Controller/
+        namespace: App\Controller
+    type: attribute
+
+web_:
+    resource: ./web-routes/routes.yaml
+    name_prefix: web_
+
+PrestaSitemapBundle_section:
+    path: "/sitemap.{name}.xml"
+    defaults: { _controller: Presta\SitemapBundle\Controller\SitemapController::sectionAction }
+    requirements:
+        name: '%ALLOWED_LANGUAGES%'

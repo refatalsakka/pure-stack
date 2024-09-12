@@ -1,0 +1,308 @@
+@import './../../../vars';
+
+.home-services {
+	margin-bottom: 50px;
+
+	.services-hero {
+		display: flex;
+		flex-direction: column;
+		gap: 5vh;
+		justify-content: center;
+		margin-bottom: 5vh;
+		text-align: center;
+
+		@media (width >=992px) {
+			min-height: 100vh;
+		}
+
+		h1 {
+			text-align: center;
+
+			@media (width >=992px) {
+				font-size: 80px;
+				line-height: 120px;
+			}
+
+			@media (width <=992px) {
+				font-size: 40px;
+				line-height: 70px;
+			}
+
+			@media (max-width: 576px) {
+				font-size: 35px;
+			}
+		}
+
+		>strong {
+			display: block;
+			font-size: 20px;
+		}
+
+		img[src='/build/shapes/home-service-section/arrow.svg'].reverse {
+			rotate: 180deg;
+		}
+
+		img[src='/build/shapes/home-service-section/arrow.svg'] {
+			transition: all 0.3s ease;
+			width: 190px;
+
+			@media (width <=992px) {
+				width: 120px;
+			}
+
+			&:hover {
+				transform: translateX(15px);
+			}
+		}
+
+		.star {
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: contain;
+			display: inline-block;
+			height: 80px;
+			width: 80px;
+
+			@media (width <=992px) {
+				height: 40px;
+				width: 40px;
+			}
+		}
+
+		@media (max-width: 576px) {
+			.star, img[src='/build/shapes/home-service-section/arrow.svg'].reverse,
+			img[src='/build/shapes/home-service-section/arrow.svg'] {
+				display: none;
+			}
+		}
+
+		img[src='/build/shapes/home-service-section/curved-arrow.svg'] {
+			cursor: pointer;
+			display: block;
+			height: 130px;
+			transform: scale(1) translateY(0);
+			transition: all 0.3s ease;
+
+			&:hover {
+				transform: scale(1.2) translateY(15px);
+			}
+		}
+	}
+
+	.services-container {
+		min-height: 100vh;
+		overflow: hidden;
+		position: relative;
+
+		.cafe-bottom-right {
+			bottom: -25px;
+			opacity: 0;
+			position: absolute;
+			right: 150px;
+			transition:
+				bottom 0.5s ease,
+				opacity 0.5s ease;
+			width: 70px;
+			z-index: 1;
+
+
+			@media (max-width: 992px) {
+				width: 35px;
+				right: 75px;
+			}
+
+			@media (max-width: 350px) {
+				display: none;
+			}
+
+			@media (max-height: 600px) {
+				display: none;
+			}
+
+			&.active {
+				bottom: 0;
+				opacity: 1;
+				z-index: 3;
+			}
+		}
+		.back {
+			background: #fff;
+			border-radius: 50%;
+			cursor: pointer;
+			display: none;
+			mix-blend-mode: overlay;
+			padding: 5px;
+			position: absolute;
+			right: 10px;
+			top: 10px;
+			transition: all 0.1s linear;
+			user-select: none;
+			width: 50px;
+			z-index: 9;
+
+			@media (width <=720px) {
+				width: 30px;
+			}
+
+			&:hover {
+				padding: 7px;
+				rotate: -20deg;
+			}
+		}
+
+		>.service.active~.back {
+			display: block;
+		}
+
+		>.service {
+			align-items: center;
+			display: flex;
+			height: 100%;
+			position: absolute;
+			width: 100%;
+
+			&:nth-of-type(n + 8) {
+				display: none;
+			}
+
+			.content {
+				margin-bottom: 25vh;
+				transition: opacity 0.5s ease;
+
+				h2 {
+					font-size: 65px;
+					overflow-wrap: break-word;
+					white-space: break-spaces;
+					word-break: break-word;
+
+					@media (width <=992px) {
+						font-size: 40px;
+					}
+
+					@media (width <=720px) {
+						font-size: 20px;
+					}
+				}
+
+				h3 {
+					font-size: 30px;
+					font-weight: 600;
+
+					@media (width <=992px) {
+						font-size: 15px;
+					}
+				}
+
+				h2,
+				h3 {
+					text-transform: uppercase;
+				}
+
+				a {
+					font-size: calc($paragraph-font-size * 0.8);
+					font-weight: 600;
+					text-decoration: none;
+				}
+
+				p {
+					@media (width <=720px) {
+						font-size: 15px;
+					}
+				}
+
+				.cafe-btn {
+					background: transparent;
+					border-radius: 50px;
+					padding: 8px 45px;
+					transition: all 0.1s linear;
+
+					@media (width <=720px) {
+						font-size: 12px;
+						padding: 5px 20px;
+					}
+
+					&:hover {
+						background: $white;
+						color: $black-title;
+					}
+				}
+			}
+
+			@media (width <=1199px) {
+				align-items: start;
+
+				.content {
+					margin-bottom: 0;
+					margin-top: 3vh;
+				}
+			}
+		}
+
+		$colors: (1: (text-color: $black,
+				background-color: $yellow),
+			2: (text-color: $white,
+				background-color: $dark-green),
+			3: (text-color: $white,
+				background-color: #1e1c4d),
+			4: (text-color: $black,
+				background-color: $yellow),
+			5: (text-color: $white,
+				background-color: $dark-green),
+			6: (text-color: $white,
+				background-color: #1e1c4d),
+			7: (text-color: $white,
+				background-color: $dark-green));
+
+		@for $i from 1 through length($colors) {
+			$style: map-get($colors, $i);
+			$text-color: map-get($style, text-color);
+			$background-color: map-get($style, background-color);
+
+			>.service:nth-of-type(#{$i}) {
+				background-color: $background-color;
+				color: $text-color;
+				transition: all 0.3s linear;
+
+				$vh1: 87vh - ($i - 1) * 2vh;
+				$vw2: 90vw - ($i - 1) * 1vw;
+				$vh2: 138vh + ($i - 1) * 1vh;
+				$vh2-animation: 137vh + ($i - 1) * 1vh;
+				$vh2-hover: 136vh + ($i - 1) * 1.1vh;
+
+				@if $i>1 {
+					clip-path: ellipse(100vw #{$vh1} at #{$vw2} #{$vh2});
+				}
+
+				a {
+					color: $text-color;
+				}
+
+				.cafe-btn {
+					border: 1px solid $text-color;
+					color: $text-color;
+
+					&:hover {
+						background: $text-color;
+						color: $background-color;
+					}
+				}
+
+				&.service.active {
+					clip-path: ellipse(100vw 100vh at 50vw 50vh);
+				}
+
+				&:not(.service.active, :first-of-type) {
+					cursor: pointer;
+
+					.content {
+						opacity: 0;
+					}
+
+					&:hover {
+						clip-path: ellipse(100vw #{$vh1} at #{$vw2} #{$vh2-hover});
+					}
+				}
+			}
+		}
+	}
+}

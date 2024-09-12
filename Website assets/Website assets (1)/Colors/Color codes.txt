@@ -1,0 +1,16 @@
+Green Shades:
+#043B38
+#1B9177
+
+Yellow shades:
+#EAAC01
+#FBC940
+
+White:
+#FFFFFF
+
+Black:
+#000000
+
+Gray:
+#B1AEAE

@@ -1,0 +1,9 @@
+{
+    "extends": ["stylelint-config-standard-scss", "stylelint-prettier/recommended"],
+    "plugins": ["stylelint-prettier", "stylelint-order"],
+    "rules": {
+      "order/properties-alphabetical-order": true,
+      "prettier/prettier": true,
+      "color-named": "never"
+    }
+  }

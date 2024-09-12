@@ -1,0 +1,36 @@
+<section id="projects" class="container home-projects">
+	<h1>{{ "home.projects_section.title"|trans|raw }}</h1>
+	<div class="gallery-wrapper-cards">
+		{% for project in projects %}
+			<div class="card">
+				<a href="{{ current_locale }}/projects{{ project.slug }}">
+					<img src="{{ project.image }}" alt="{{ project.name }}">
+					<div class="card-img-overlay">
+						<h4 class="card-title">{{ project.name }}</h4>
+						<p class="card-text">{{ project.summary }}</p>
+					</div>
+				</a>
+			</div>
+		{% endfor %}
+	</div>
+	<div class="gallery-wrapper">
+		<span class="star"></span>
+		<section id="image-carousel" class="splide">
+			<div class="splide__track">
+				<ul class="splide__list">
+					{% for project in projects %}
+						<li class="splide__slide">
+							<a href="{{ current_locale }}/projects{{ project.slug }}">
+								<div class="splide-slide-image-container">
+									<img src="{{ project.image }}" alt="{{ project.name }}">
+								</div>
+								<h3>{{ project.name }}</h3>
+							</a>
+							<span></span>
+						</li>
+					{% endfor %}
+				</ul>
+			</div>
+		</section>
+	</div>
+</section>

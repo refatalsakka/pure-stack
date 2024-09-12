@@ -1,0 +1,37 @@
+home:
+    path: /{_locale?}
+    controller: App\Controller\HomeController::index
+    methods: GET
+    options:
+        sitemap: 
+            changefreq: monthly
+            priority: 1
+    requirements:
+        _locale: '%ALLOWED_LANGUAGES%'
+
+imprint:
+    path: /{_locale}/imprint
+    controller: App\Controller\StaticPageController::imprint
+    methods: GET
+    requirements:
+        _locale: '%ALLOWED_LANGUAGES%'
+
+privacy-policy:
+    path: /{_locale}/privacy-policy
+    controller: App\Controller\StaticPageController::privacyPolicy
+    methods: GET
+    requirements:
+        _locale: '%ALLOWED_LANGUAGES%'
+
+terms-and-conditions:
+    path: /{_locale}/terms-and-conditions
+    controller: App\Controller\StaticPageController::termsAndConditions
+    methods: GET
+    requirements:
+        _locale: '%ALLOWED_LANGUAGES%'
+
+contact:
+    path: /contact
+    controller: App\Controller\ContactController::index
+    methods: POST
+

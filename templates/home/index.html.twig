@@ -1,0 +1,42 @@
+{% extends "base.html.twig" %}
+
+{% block title %}
+    {{ "home.title"|trans }}
+{% endblock %}
+
+{% block meta %}
+	<meta name="description" content="Sleeky Code UG provides tailored IT and software development solutions, including web development, cloud services, and domain management. Let us help your business thrive with innovative and scalable technology.">
+{% endblock %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    {{ encore_entry_link_tags("home") }}
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    {{ encore_entry_script_tags("home") }}
+{% endblock %}
+
+{% block body %}
+    {% include 'home/sections/hero.html.twig' %}
+
+    {% if projects is defined and projects is not empty %}
+        {% include 'home/sections/projects.html.twig' %}
+    {% endif %}
+
+    {% if services is defined and services is not empty %}
+        {% include 'home/sections/services.html.twig' %}
+    {% endif %}
+
+    {% if workStages is defined and workStages is not empty %}
+        {% include 'home/sections/workflows.html.twig' %}
+    {% endif %}
+
+    {% if workValues is defined and workValues is not empty %}
+        {% include 'home/sections/values.html.twig' %}
+    {% endif %}
+
+    {% include 'home/sections/contact.html.twig' %}
+{% endblock %}

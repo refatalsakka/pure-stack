@@ -1,0 +1,65 @@
+# Stage 1: Node.js Build Stage
+FROM node:16-alpine as assets-builder
+
+WORKDIR /app
+
+# Copy package.json and package-lock.json first to leverage Docker cache
+COPY ./package.json ./package-lock.json ./
+
+# Copy the assets and webpack configuration
+COPY ./webpack.config.js ./
+COPY ./assets ./assets
+
+# Install Node.js dependencies
+RUN npm install
+
+# Build the production assets
+RUN npm run build
+
+# Stage 2: PHP/Apache Stage
+FROM php:8.2-apache-bullseye
+
+# Install necessary dependencies for PHP and Apache
+RUN apt-get update && apt-get install -y \
+    git \
+    unzip \
+    zip \
+    libicu-dev \
+    libpq-dev \
+    libonig-dev \
+    libzip-dev \
+    && docker-php-ext-install intl pdo pdo_mysql opcache
+
+# Enable Apache mod_rewrite and other necessary modules
+RUN a2enmod rewrite headers
+COPY docker/apache/httpd.conf /etc/apache2/sites-enabled/000-default.conf
+
+# Install Composer globally
+COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
+
+# Set the working directory for PHP
+WORKDIR /var/www/html
+
+# Copy Composer files first to leverage Docker layer caching
+COPY composer.json composer.lock ./
+
+# Install PHP dependencies (production mode)
+ENV COMPOSER_ALLOW_SUPERUSER=1
+RUN composer install --no-dev --optimize-autoloader --no-interaction --no-scripts --prefer-dist
+
+# Copy only necessary application files and folders
+COPY ./bin ./bin
+COPY ./config ./config
+COPY ./public/index.php ./public/index.php
+COPY ./public/robots.txt ./public/robots.txt
+COPY ./src ./src
+COPY ./templates ./templates
+COPY ./translations ./translations
+COPY ./migrations ./migrations
+COPY ./var ./var
+COPY ./.env ./.env
+COPY ./.env.prod ./.env.prod
+COPY --from=assets-builder /app/public/build ./public/build
+
+RUN chown -R www-data:www-data /var/www/html/var
+RUN chmod -R 775 /var/www/html/var

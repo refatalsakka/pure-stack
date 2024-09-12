@@ -1,0 +1,142 @@
+@import './../../../vars';
+
+.home-hero {
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	margin-bottom: 50px;
+
+	@media (min-width: 1200px) {
+		min-height: 100vh;
+	}
+
+	main {
+		text-align: center;
+		width: 55vw;
+
+		@media (max-width: 1200px) {
+			padding-top: 30px;
+			width: 100vw;
+			margin-bottom: 0;
+		}
+
+		@media (min-width: 1200px) {
+			margin-bottom: 20vw;
+		}
+
+		&:hover {
+			img[src='/build/shapes/common/small-grass-left.svg'].up-left {
+				left: -14px;
+				top: -11px;
+			}
+
+			img[src='/build/shapes/common/small-grass-left.svg'].bottom-right {
+				right: -10px;
+			}
+		}
+
+		h1 {
+			display: inline;
+			font-size: 75px;
+			overflow-wrap: break-word;
+			position: relative;
+
+			@media (max-width: 992px) {
+				font-size: 40px;
+			}
+
+			@media (max-width: 576px) {
+				font-size: 35px;
+			}
+
+			img[src='/build/shapes/common/small-grass-left.svg'].up-left {
+				left: -18px;
+				position: absolute;
+				top: -15px;
+			}
+
+			img[src='/build/shapes/common/small-grass-left.svg'].bottom-right {
+				position: absolute;
+				right: -20px;
+				transform: rotate(70deg);
+			}
+
+
+			img[src='/build/shapes/common/small-grass-left.svg'].up-left,
+			img[src='/build/shapes/common/small-grass-left.svg'].bottom-right {
+				transition: all 0.1s ease;
+
+				@media (max-width: 992px) {
+					display: none;
+				}
+		
+			}
+		}
+
+		p {
+			font-size: 25px;
+			font-weight: 600;
+			margin-top: 10px;
+			overflow-wrap: break-word;
+		}
+	}
+}
+
+.home-decorative-elements {
+	/* stylelint-disable-next-line rule-empty-line-before */
+	.path-left,
+	.path-right {
+		bottom: 28px;
+		position: absolute;
+		width: 41vw;
+	}
+
+	.path-left {
+		left: 0;
+		transition: transform 0.3s ease;
+
+		&:hover {
+			transform: scale(1.1);
+		}
+
+		&:hover~.grass-center {
+			transform: rotate(-5deg) translate(-50%, -50%);
+		}
+	}
+
+	.path-right {
+		right: 0;
+		transition: transform 0.3s ease;
+
+		&:hover {
+			transform: scale(1.1);
+		}
+
+		&:hover~.grass-center {
+			transform: rotate(5deg) translate(-50%, -25%);
+		}
+	}
+
+	.grass-center {
+		bottom: -4vw;
+		left: 50%;
+		position: absolute;
+		transform: scale(1) translate(-50%, -50%);
+		transition: transform 0.3s ease;
+		width: 20vw;
+
+		&:hover {
+			transform: scale(1.1) translate(-45%, -50%);
+		}
+
+		/* stylelint-disable-next-line media-feature-range-notation */
+		@media (max-width: 992px) {
+			bottom: -30px;
+			width: 165px;
+		}
+	}
+
+	@media (max-width: 1200px) {
+		display: none;
+	}
+}

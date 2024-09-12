@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+
+{% set current_path = app.request.pathInfo %}
+{% set current_locale = "/" ~ app.request.locale %}
+{% set base_path = current_path|replace({(current_locale): ""}) %}
+
+<html lang="{{ app.request.locale }}">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="UTF-8">
+		<meta name="robots" content="index, follow">
+
+		<link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+
+		{% block meta %}{% endblock %}
+
+		<title>
+			{% block title %}{% endblock %}
+		</title>
+
+		{% block stylesheets %}
+			{{ encore_entry_link_tags("app") }}
+		{% endblock %}
+
+	</head>
+	<body>
+		<nav class="navbar navbar-expand-lg navbar-light bg-light container" id="navbar">
+			<div class="container">
+				<a class="navbar-brand" href="{{ current_locale }}">
+					<h1>
+						<span class="black-text">Sleeky</span>
+						<span class="green-text">Code</span>
+					</h1>
+					<span class="separate-line"></span>
+				</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+						<li class="nav-item">
+							<a class="nav-link {{ base_path == "" ? "active" : "" }}" href="{% if current_path == current_locale %}#navbar{% else %}{{ current_locale }}/#navbar{% endif %}">
+								{{ "navbar.home"|trans }}
+							</a>
+						</li>
+						{# <li class="nav-item">
+							<a class="nav-link {{ base_path starts with "/projects" ? "active" : "" }}" href="{% if current_path == current_locale %}#projects{% else %}{{ current_locale }}/#projects{% endif %}">
+								{{ "navbar.projects"|trans }}
+							</a>
+						</li> #}
+						<li class="nav-item {{ base_path starts with "/services" ? "active" : "" }}">
+							<a class="nav-link" href="{% if current_path == current_locale %}#services{% else %}{{ current_locale }}/#services{% endif %}">
+								{{ "navbar.services"|trans }}
+							</a>
+						</li>
+						<li class="nav-item {{ base_path starts with "/workflows" ? "active" : "" }}">
+							<a class="nav-link" href="{% if current_path == current_locale %}#workflows{% else %}{{ current_locale }}/#workflows{% endif %}">
+								{{ "navbar.workflows"|trans }}
+							</a>
+						</li>
+						<li class="nav-item {{ base_path starts with "/values" ? "active" : "" }}">
+							<a class="nav-link" href="{% if current_path == current_locale %}#values{% else %}{{ current_locale }}/#values{% endif %}">
+								{{ "navbar.values"|trans }}
+							</a>
+						</li>
+						<li class="nav-item {{ base_path starts with "/contact" ? "active" : "" }}">
+							<a class="nav-link" href="{% if current_path == current_locale %}#contact{% else %}{{ current_locale }}/#contact{% endif %}">
+								{{ "navbar.contact"|trans }}
+							</a>
+						</li>
+					</ul>
+					<div class="d-flex navbar-actions">
+						<div class="btn-group dropstart">
+							<button type="button" data-bs-toggle="dropdown" aria-expanded="false">
+								<img src="{{ asset("build/icons/magnifying-glass-solid.svg") }}" alt="language" class="language-icon"/>
+							</button>
+							<ul class="dropdown-menu">
+								<li>
+									<a class="dropdown-item {{ app.request.locale == "en" ? "active" : "" }}" href="{{ "/en" ~ base_path }}">{{ "navbar.english"|trans }}</a>
+								</li>
+								<li>
+									<a class="dropdown-item {{ app.request.locale == "de" ? "active" : "" }}" href="{{ "/de" ~ base_path }}">{{ "navbar.german"|trans }}</a>
+								</li>
+							</ul>
+						</div>
+						{# <a class="btn white-green-button sign-up-btn">{{ "navbar.sign_up"|trans }}</a> #}
+					</div>
+				</div>
+			</div>
+		</nav>
+		{% block body %}{% endblock %}
+		<footer>
+			<div class="bg-1"></div>
+			<div class="bg-2"></div>
+			<div class="bg-3"></div>
+			<div class="bg-4">
+				<div class="squirrel-grass">
+					<img src="{{ asset("build/shapes/common/grass.svg") }}" alt="grass"/>
+					<img src="{{ asset("build/images/common/squirrel.png") }}" alt="squirrel"/>
+				</div>
+				<div class="container">
+					<div class="content">
+						<h1>Sleeky Code UG</h1>
+						<p>{{ "footer.sub_title"|trans }}</p>
+						<div class="row">
+							<div class="col mb-3">
+								<ul class="nav flex-column">
+									<li class="nav-item mb-2">
+										<a href="{% if current_path == current_locale %}#navbar{% else %}{{ current_locale }}/#navbar{% endif %}" class="nav-link p-0 {{ base_path == "" ? "text-white" : "text-muted" }}">
+											{{ "navbar.home"|trans }}
+										</a>
+									</li>
+									<li class="nav-item mb-2">
+										<a href="{% if current_path == current_locale %}#services{% else %}{{ current_locale }}/#services{% endif %}" class="nav-link p-0 text-muted">
+											{{ "navbar.services"|trans }}
+										</a>
+									</li>
+									{# <li class="nav-item mb-2">
+										<a href="{% if current_path == current_locale %}#projects{% else %}{{ current_locale }}/#projects{% endif %}" class="nav-link p-0 text-muted">
+											{{ "navbar.projects"|trans }}
+										</a>
+									</li> #}
+									<li class="nav-item mb-2">
+										<a href="{% if current_path == current_locale %}#workflows{% else %}{{ current_locale }}/#workflows{% endif %}" class="nav-link p-0 text-muted">
+											{{ "navbar.workflows"|trans }}
+										</a>
+									</li>
+									<li class="nav-item mb-2">
+										<a href="{% if current_path == current_locale %}#values{% else %}{{ current_locale }}/#values{% endif %}" class="nav-link p-0 text-muted">
+											{{ "navbar.values"|trans }}
+										</a>
+									</li>
+									<li class="nav-item mb-2">
+										<a href="{% if current_path == current_locale %}#contact{% else %}{{ current_locale }}/#contact{% endif %}" class="nav-link p-0 text-muted">
+											{{ "navbar.contact"|trans }}
+										</a>
+									</li>
+								</ul>
+							</div>
+							<div class="col mb-3">
+								<ul class="nav flex-column">
+									<li class="nav-item mb-2">
+										<a href="{{ current_locale }}/privacy-policy" class="nav-link p-0 {{ base_path starts with "/privacy-policy" ? "text-white" : "text-muted" }}">{{ "navbar.privacy_policy"|trans }}</a>
+									</li>
+									<li class="nav-item mb-2">
+										<a href="{{ current_locale }}/imprint" class="nav-link p-0 {{ base_path starts with "/imprint" ? "text-white" : "text-muted" }}">{{ "navbar.imprint"|trans }}</a>
+									</li>
+								</ul>
+							</div>
+							{# <div class="col mb-3">
+								<ul class="nav flex-column">
+									<li class="nav-item mb-2">
+										<a href="{{ current_locale }}/web-design-contract" class="nav-link p-0 text-muted" target="_blank">{{ "navbar.web_design_contract"|trans }}</a>
+									</li>
+									<li class="nav-item mb-2">
+										<a href="{{ current_locale }}/av-contract" class="nav-link p-0 text-muted" target="_blank">{{ "navbar.av_contract"|trans }}</a>
+									</li>
+								</ul>
+							</div> #}
+							<div class="col mb-3">
+								<ul class="nav flex-column">
+									<li class="nav-item mb-2">
+										<a href="{{ "/en" ~ base_path }}" class="nav-link p-0 text-muted">
+											{{ "navbar.english"|trans }}
+										</a>
+									</li>
+									<li class="nav-item mb-2">
+										<a href="{{ "/de" ~ base_path }}" class="nav-link p-0 text-muted">
+											{{ "navbar.german"|trans }}
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<span class="star"></span>
+		</footer>
+		{% block javascripts %}
+			{{ encore_entry_script_tags("app") }}
+		<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+		{% endblock %}
+	</body>
+</html>

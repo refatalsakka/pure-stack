@@ -1,0 +1,385 @@
+navbar:
+  home: Home
+  projects: Projects
+  services: Services
+  about_us: About us
+  workflows: Workflows
+  values: Values
+  contact: Contact
+  sign_up: Sign up
+  terms_and_conditions: Terms and conditions
+  privacy_policy: Privacy Policy
+  imprint: Imprint
+  web_design_contract: Web design contract
+  av_contract: AV contract
+  english: English
+  german: German
+
+footer:
+  sub_title: All of your work in one place
+
+home:
+  title: Home
+  hero_section:
+    title:
+      span_1: Before We Dive In
+      span_2: We Understand Your Challenges
+    subtitle: '<p>We carefully analyze your needs and provide tailored solutions that align with your goals, delivering results that are both effective and sustainable for the long term.</p>'
+  projects_section:
+    title: Our<span class="green-text"> creative record</span>:<br>A selection of our works.
+  services_section:
+    title:
+      1: Web Development
+      2: UI UX Design
+      3: Database System
+      4: Cloud Computing
+      5: SEO & Marketing
+    subtitle: 'Our Services : We Do All Of This For You'
+    and_more: and more
+    cafe_btn: Let's have cafe
+    see_more: See more
+  workflows_section:
+    title: How we work
+  values_section:
+    title: Things we care about
+  services_contact:
+    title: We Do Like To Hear From You
+    form:
+      name: Name
+      email: Email
+      telephone_number: Telefonnummer
+      terms_read: I have read and agree to the <a href="/privacy-policy">terms and conditions</a>.
+      your_message: Your message
+      send: Send
+      error_message: Something went wrong, please try again.
+      success_message: Your message has been received. We'll be in touch soon.
+
+imprint:
+  title: Imprint
+  legal_section:
+    title: Legal
+    company: "Company: Sleeky Code UG (haftungsbeschränkt)"
+    registration_number: "Registration Number: HRB 264833 B"
+    court: "Court of Registration: Amtsgericht Berlin (Charlottenburg)"
+    vat_id: "VAT Identification Number according to § 27 a German VAT Act: DE369221495"
+    represented_by: "Represented by: Refat Alsakka"
+  editorial_section:
+    title: Editorial Responsibility
+    name: "Name: Refat Alsakka"
+    care_of: "c/o Sleeky Code UG"
+    address: "Address: Mühlenstraße 8A, 14167 Berlin"
+  liability_section:
+    title: Liability for Content
+    content: "The contents of our pages were created with the utmost care. However, we cannot guarantee the accuracy, completeness, or timeliness of the content."
+  eu_dispute_resolution:
+    title: EU Dispute Resolution
+    content: "The European Commission provides a platform for online dispute resolution (ODR): <a href=\"https://ec.europa.eu/consumers/odr/\" target=\"_blank\">https://ec.europa.eu/consumers/odr/</a>. You can find our email address at the top of the imprint."
+  consumer_dispute_resolution:
+    title: Consumer Dispute Resolution/Universal Arbitration
+    content: "We are not willing or obliged to participate in dispute resolution procedures before a consumer arbitration board."
+  bank_details_section:
+    title: Bank Details
+  address_section:
+    title: Adresse
+    company: Sleeky Code UG
+    address: Mühlenstraße 8A, 14167 Berlin
+  contact_details_section:
+    title: Contact details
+    email: 'E-Mail: contact@sleekycode.com'
+    telefon: 'Phone: 0176 35436667'
+  open_hours_section:
+    title: Open hours
+    weekdays: 'Mondy - Friday: 9:00 - 16:00'
+
+privacy_policy:
+  title: "Privacy Policy"
+  
+  # Section 1: Data Protection at a Glance
+  section1_title: "1. Data Protection at a Glance"
+  general_notices_title: "General Information"
+  general_notices_description: "The following notes provide a simple overview of what happens to your personal data when you visit this website. Personal data is any data by which you can be personally identified. Detailed information on data protection can be found in our privacy policy listed below this text."
+  
+  data_collection_title: "Data Collection on this Website"
+  data_collection_responsible_question: "Who is responsible for data collection on this website?"
+  data_collection_responsible_answer: "Data processing on this website is carried out by the website operator. Their contact details can be found in the section 'Notice Regarding the Responsible Party' in this privacy policy."
+
+  data_capture_title: "How do we collect your data?"
+  data_capture_manual: "Your data is collected on the one hand by you providing it to us. This could be data that you enter in a contact form, for example."
+  data_capture_automatic: "Other data is automatically collected or with your consent when you visit the website through our IT systems. This is mainly technical data (e.g., internet browser, operating system, or time of page access). This data is collected automatically as soon as you enter this website."
+  
+  data_usage_title: "What do we use your data for?"
+  data_usage_description: "Part of the data is collected to ensure the website functions correctly. Other data can be used to analyze your user behavior."
+  
+  rights_title: "What rights do you have regarding your data?"
+  rights_description: "You have the right to receive information about the origin, recipient, and purpose of your stored personal data at any time free of charge. You also have the right to request the correction or deletion of these data. If you have given your consent to data processing, you can revoke this consent at any time with effect for the future. In addition, you have the right to request the restriction of the processing of your personal data under certain circumstances. Furthermore, you have the right to lodge a complaint with the competent supervisory authority."
+  rights_contact_hint: "You can contact us at any time for this or for further questions on the subject of data protection."
+
+  analysis_tools_title: "Analysis Tools and Third-Party Tools"
+  analysis_tools_description: "When you visit this website, your surfing behavior may be statistically evaluated. This happens primarily with so-called analysis programs."
+  analysis_tools_hint: "Detailed information on these analysis programs can be found in the following privacy policy."
+
+  # Section 2: Hosting
+  section2_title: "2. Hosting"
+  hosting_provider_title: "AWS (Amazon Web Services)"
+  hosting_provider_description: "We host our website with AWS (Amazon Web Services). The provider is Amazon Web Services, Inc., 410 Terry Avenue North, Seattle WA 98109, USA (hereinafter AWS)."
+  hosting_provider_link: "Details can be found in AWS's privacy policy: <a href=\"https://aws.amazon.com/privacy/\" target=\"_blank\">AWS privacy policy</a>."
+  hosting_provider_legal_basis: "The use of AWS is based on Art. 6 para. 1 lit. f GDPR. We have a legitimate interest in ensuring the most reliable possible presentation of our website."
+
+  processing_agreement_title: "Data Processing Agreement"
+  processing_agreement_description: "We have concluded a data processing contract (DPA) with the above-mentioned provider. This is a contract required by data protection law, which ensures that this provider processes the personal data of our website visitors only according to our instructions and in compliance with the GDPR."
+
+  # Section 3: General Information and Mandatory Information
+  section3_title: "3. General Information and Mandatory Information"
+  privacy_title: "Data Protection"
+  privacy_intro: |
+    The operators of these pages take the protection of your personal data very seriously. We treat your personal data confidentially and in accordance with the statutory data protection regulations and this privacy policy.
+  privacy_data_collection: |
+    When you use this website, various personal data is collected. Personal data is data by which you can be personally identified. This privacy policy explains what data we collect and what we use it for. It also explains how and for what purpose this happens.
+  privacy_data_transfer_warning: |
+    We would like to point out that data transmission on the internet (e.g., when communicating by email) can have security gaps. Complete protection of data from access by third parties is not possible.
+
+  responsible_notice_title: "Notice Regarding the Responsible Party"
+  responsible_person_info: "The responsible party for data processing on this website is:"
+  responsible_name: "Refat Alsakka"
+  responsible_address: "c/o Sleeky Code UG (haftungsbeschränkt)<br>Mühlenstraße 8A<br>14167 Berlin<br>Germany"
+  responsible_contact: "Phone: 0176 35436667"
+  responsible_email: "Email: refat.alsakka@sleekycode.com"
+  
+  storage_duration_title: "Storage Duration"
+  storage_duration_description: "Unless a more specific storage period has been mentioned within this privacy policy, your personal data will remain with us until the purpose for the data processing no longer applies. If you make a legitimate request for deletion or revoke your consent to data processing, your data will be deleted, unless we have other legally permissible reasons for storing your personal data (e.g., tax or commercial law retention periods); in the latter case, the data will be deleted after these reasons cease to apply."
+  
+  legal_basis_general_title: "General Information on the Legal Basis of Data Processing on this Website"
+  legal_basis_general_description: "If you have consented to data processing, we process your personal data based on Art. 6 para. 1 lit. a GDPR or Art. 9 para. 2 lit. a GDPR, if special categories of data are processed according to Art. 9 para. 1 GDPR. In the case of explicit consent to the transfer of personal data to third countries, data processing is also based on Art. 49 para. 1 lit. a GDPR. If you have consented to the storage of cookies or to access to information in your end device (e.g., via device fingerprinting), data processing is also based on § 25 para. 1 TTDSG. The consent can be revoked at any time. If your data is necessary for the performance of a contract or for the implementation of pre-contractual measures, we process your data based on Art. 6 para. 1 lit. b GDPR. Furthermore, we process your data, insofar as this is necessary to fulfill a legal obligation based on Art. 6 para. 1 lit. c GDPR. The data processing may also be carried out based on our legitimate interest under Art. 6 para. 1 lit. f GDPR. Information on the relevant legal basis in each individual case is provided in the following paragraphs of this privacy policy."
+
+  data_transfer_notice_title: "Notice Regarding Data Transfer to the USA and Other Third Countries"
+  data_transfer_notice_description: "We use tools from companies based in the USA or other countries that are not secure under data protection law. When these tools are active, your personal data may be transferred to these third countries and processed there. We would like to point out that no level of data protection comparable to that in the EU can be guaranteed in these countries. For example, US companies are obliged to hand over personal data to security authorities without you, as the data subject, being able to take legal action against this. It is therefore possible that US authorities (e.g., intelligence services) may process, evaluate, and permanently store your data located on US servers for surveillance purposes. We have no influence on these processing activities."
+
+  consent_revocation_title: "Revocation of Your Consent to Data Processing"
+  consent_revocation_description: "Many data processing operations are only possible with your explicit consent. You can revoke consent that you have already given at any time. The legality of the data processing carried out until the revocation remains unaffected by the revocation."
+
+  objection_right_title: "Right to Object to Data Collection in Special Cases and to Direct Advertising (Art. 21 GDPR)"
+  objection_right_description: "IF DATA PROCESSING IS BASED ON ART. 6 PARA. 1 LIT. E OR F GDPR, YOU HAVE THE RIGHT TO OBJECT TO THE PROCESSING OF YOUR PERSONAL DATA AT ANY TIME FOR REASONS ARISING FROM YOUR PARTICULAR SITUATION; THIS ALSO APPLIES TO PROFILING BASED ON THESE PROVISIONS. THE RESPECTIVE LEGAL BASIS ON WHICH PROCESSING IS BASED CAN BE FOUND IN THIS PRIVACY POLICY. IF YOU OBJECT, WE WILL NO LONGER PROCESS YOUR AFFECTED PERSONAL DATA UNLESS WE CAN DEMONSTRATE COMPELLING LEGITIMATE GROUNDS FOR THE PROCESSING WHICH OVERRIDE YOUR INTERESTS, RIGHTS, AND FREEDOMS OR THE PROCESSING IS FOR THE ASSERTION, EXERCISE, OR DEFENSE OF LEGAL CLAIMS (OBJECTION UNDER ART. 21 PARA. 1 GDPR)."
+
+  objection_direct_marketing_title: "Objection to Direct Marketing"
+  objection_direct_marketing_description: "IF YOUR PERSONAL DATA IS PROCESSED FOR DIRECT MARKETING PURPOSES, YOU HAVE THE RIGHT TO OBJECT TO THE PROCESSING OF YOUR PERSONAL DATA AT ANY TIME FOR THE PURPOSE OF SUCH MARKETING; THIS ALSO APPLIES TO PROFILING INSOFAR AS IT IS ASSOCIATED WITH SUCH DIRECT MARKETING. IF YOU OBJECT, YOUR PERSONAL DATA WILL SUBSEQUENTLY NO LONGER BE USED FOR DIRECT MARKETING PURPOSES (OBJECTION UNDER ART. 21 PARA. 2 GDPR)."
+
+  complaint_right_title: "Right to Lodge a Complaint with the Competent Supervisory Authority"
+  complaint_right_description: "In the event of violations of the GDPR, data subjects have the right to lodge a complaint with a supervisory authority, particularly in the Member State of their habitual residence, their place of work, or the place of the alleged violation. The right to lodge a complaint exists without prejudice to other administrative or judicial remedies."
+
+  data_portability_title: "Right to Data Portability"
+  data_portability_description: "You have the right to have data that we process automatically based on your consent or in the performance of a contract handed over to you or to a third party in a commonly used, machine-readable format. If you request the direct transfer of the data to another controller, this will only be done insofar as it is technically feasible."
+
+  access_deletion_correction_title: "Right to Access, Deletion, and Correction"
+  access_deletion_correction_description: "Within the framework of the applicable legal provisions, you have the right to receive information about your stored personal data, their origin, and recipients, the purpose of data processing, and, if applicable, a right to have these data corrected or deleted. For this as well as for further questions on the subject of personal data, you can contact us at any time."
+
+  processing_restriction_title: "Right to Restrict Processing"
+  processing_restriction_description: "You have the right to request the restriction of the processing of your personal data. You can contact us at any time regarding this. The right to restrict processing exists in the following cases:"
+
+  restriction_case1: "If you dispute the accuracy of your personal data stored with us, we generally need time to verify this. For the duration of the verification, you have the right to request the restriction of the processing of your personal data."
+  restriction_case2: "If the processing of your personal data was/is unlawful, you can request the restriction of data processing instead of deletion."
+  restriction_case3: "If we no longer need your personal data, but you need them for the establishment, exercise, or defense of legal claims, you have the right to request the restriction of the processing of your personal data instead of deletion."
+  restriction_case4: "If you have filed an objection pursuant to Art. 21 para. 1 GDPR, a balance must be struck between your interests and ours. As long as it has not yet been determined whose interests prevail, you have the right to request the restriction of the processing of your personal data."
+  processing_restriction_notice: "If you have restricted the processing of your personal data, these data – apart from their storage – may only be processed with your consent or for the establishment, exercise, or defense of legal claims or for the protection of the rights of another natural or legal person or for reasons of important public interest of the European Union or a Member State."
+
+  ssl_tls_encryption_title: "SSL or TLS Encryption"
+  ssl_tls_encryption_description: "This site uses SSL or TLS encryption for security reasons and to protect the transmission of confidential content, such as orders or inquiries that you send to us as the site operator. You can recognize an encrypted connection by the fact that the browser's address bar changes from 'http://' to 'https://' and by the lock symbol in your browser bar."
+
+  ssl_tls_notice: "When SSL or TLS encryption is activated, the data you transmit to us cannot be read by third parties."
+
+  # Section 4: Data Collection on this Website
+  section4_title: "4. Data Collection on this Website"
+  cookies_title: "Cookies"
+  cookies_description: "Our internet pages use so-called 'cookies'. Cookies are small text files that do no harm to your end device. They are either stored temporarily for the duration of a session (session cookies) or permanently (persistent cookies) on your end device. Session cookies are automatically deleted after your visit. Persistent cookies remain stored on your end device until you delete them yourself or until they are automatically deleted by your web browser."
+  cookies_third_party: "In some cases, cookies from third-party companies may also be stored on your end device when you enter our site (third-party cookies). These allow us or you to use certain services provided by the third-party company (e.g., cookies for the processing of payment services)."
+  cookies_usage: "Cookies have various functions. Many cookies are technically necessary, as certain website functions would not work without them (e.g., the shopping cart function or displaying videos). Other cookies are used to analyze user behavior or display advertisements."
+  cookies_consent: "Cookies that are necessary for the electronic communication process, the provision of certain functions you have requested (e.g., for the shopping cart function), or the optimization of the website (e.g., cookies for measuring the web audience) are stored based on Art. 6 para. 1 lit. f GDPR unless another legal basis is specified. The website operator has a legitimate interest in storing necessary cookies for the technically error-free and optimized provision of its services. If consent to the storage of cookies and comparable recognition technologies has been requested, processing is based solely on this consent (Art. 6 para. 1 lit. a GDPR and § 25 para. 1 TTDSG); the consent can be revoked at any time."
+  cookies_browser_settings: "You can set your browser to inform you about the setting of cookies and only allow cookies in individual cases, exclude the acceptance of cookies for specific cases or generally, and activate the automatic deletion of cookies when closing the browser. The functionality of this website may be limited if cookies are disabled."
+  cookies_disabling: "Insofar as cookies from third-party companies or cookies for analysis purposes are used, we will inform you of this separately in this privacy policy and, if necessary, request your consent."
+
+  contact_form_title: "Contact Form"
+  contact_form_description: "If you send us inquiries via the contact form, your details from the inquiry form, including the contact details you provide there, will be stored by us for the purpose of processing the inquiry and in case of follow-up questions. We do not pass on this data without your consent."
+  contact_form_processing: "The processing of these data is based on Art. 6 para. 1 lit. b GDPR, if your inquiry is related to the performance of a contract or is necessary for the implementation of pre-contractual measures. In all other cases, the processing is based on our legitimate interest in the effective processing of inquiries addressed to us (Art. 6 para. 1 lit. f GDPR) or on your consent (Art. 6 para. 1 lit. a GDPR), if this has been requested; the consent can be revoked at any time."
+  contact_form_data_retention: "The data you enter in the contact form will remain with us until you request us to delete it, revoke your consent to storage, or the purpose for storing the data no longer applies (e.g., after your request has been processed). Mandatory legal provisions – especially retention periods – remain unaffected."
+
+  recaptcha_title: "Google reCAPTCHA"
+  recaptcha_description: We use Google reCAPTCHA on our website to ensure that data entered on our site is provided by humans and not automated programs. Google reCAPTCHA analyzes the behavior of the website visitor based on various characteristics to detect bots. This includes data such as your IP address, time spent on the website, and mouse movements. Data processing is based on Art. 6(1)(f) GDPR, as we have a legitimate interest in protecting our website from abusive access and spam. For more information on how Google processes data, please refer to the <a href=\"https://policies.google.com/privacy?hl=en-GB\" target=\"_blank\">Google Privacy Policy</a>.
+
+  email_phone_inquiry_title: "Inquiry by Email or Telephone"
+  email_phone_inquiry_description: "If you contact us by email or phone, your inquiry, including all personal data (name, inquiry) resulting from it, will be stored and processed by us for the purpose of processing your request. We do not pass on this data without your consent."
+  email_phone_inquiry_processing: "The processing of these data is based on Art. 6 para. 1 lit. b GDPR, if your inquiry is related to the performance of a contract or is necessary for the implementation of pre-contractual measures. In all other cases, the processing is based on our legitimate interest in the effective processing of inquiries addressed to us (Art. 6 para. 1 lit. f GDPR) or on your consent (Art. 6 para. 1 lit. a GDPR), if this has been requested; the consent can be revoked at any time."
+  email_phone_fax_data_retention: "The data sent to us via contact inquiries will remain with us until you request us to delete it, revoke your consent to storage, or the purpose for storing the data no longer applies (e.g., after your request has been processed). Mandatory legal provisions – especially legal retention periods – remain unaffected."
+
+  whatsapp_communication_title: "Communication via WhatsApp"
+  whatsapp_communication_description: "We use the instant messaging service WhatsApp for communication with our customers and other third parties. The provider is WhatsApp Ireland Limited, 4 Grand Canal Square, Grand Canal Harbour, Dublin 2, Ireland."
+  whatsapp_communication_security: "Communication is encrypted end-to-end (peer-to-peer), ensuring that WhatsApp or other third parties cannot access the communication content. However, WhatsApp does have access to metadata created during the communication process (e.g., sender, recipient, and time). WhatsApp also shares personal data with its US-based parent company Meta, according to its statement."
+  whatsapp_communication_link: "Further details on data processing can be found in WhatsApp's privacy policy at: <a href=\"https://www.whatsapp.com/legal/privacy-policy\" target=\"_blank\">WhatsApp privacy policy</a>."  
+  whatsapp_communication_legal_basis: "The use of WhatsApp is based on our legitimate interest in communicating with customers, prospects, and other business and contract partners as quickly and effectively as possible (Art. 6 para. 1 lit. f GDPR). If consent has been requested, the data processing is carried out exclusively based on this consent; the consent can be revoked at any time with effect for the future."
+  whatsapp_data_retention: "The communication contents exchanged on WhatsApp will remain with us until you request us to delete them, revoke your consent to storage, or the purpose for storing the data no longer applies (e.g., after your request has been processed). Mandatory legal provisions – especially retention periods – remain unaffected."
+  whatsapp_business_use: "We use WhatsApp in the 'WhatsApp Business' version."
+  whatsapp_data_transfer_to_usa: "The data transfer to the USA is based on the EU Commission's standard contractual clauses. Details can be found here: <a href=\"https://www.whatsapp.com/legal/business-data-transfer-addendum/?lang=en\" target=\"_blank\">WhatsApp Business Data Transfer Addendum</a>."
+  whatsapp_no_sync: "We have configured our WhatsApp accounts so that there is no automatic data synchronization with the address book on the smartphones in use."
+  whatsapp_avv: "We have concluded a data processing contract (DPA) with the above-mentioned provider."
+
+  microsoft_bookings_title: "Online Appointment Booking via Microsoft Bookings"
+  microsoft_bookings_description: "We use the service Microsoft Bookings, which is part of Microsoft Office 365 and provided by Microsoft Ireland Operations Limited. This service allows you to easily make appointments online. When you use the online booking function, a connection to the service is established. The information you provide in the appointment form is transmitted to Microsoft."
+  microsoft_privacy_link: "Details on data processing can be found in Microsoft's privacy policy at:  <a href=\"https://privacy.microsoft.com/en-GB/privacystatement\" target=\"_blank\">Datenschutzerklärung von Microsoft</a>."
+  microsoft_avv: "We emphasize that we have concluded a data processing agreement with Microsoft. Your data is stored by Microsoft within the EU. In some cases, Microsoft may access data in third countries, and Microsoft's subcontractors in these countries may process data. Microsoft has made additional agreements to ensure data protection even when processed by third-party providers in third countries."
+  microsoft_third_country_data_transfer_notice: "Please note that when data is transferred to third countries (including the USA), authorities in these countries may process data for monitoring and surveillance purposes. Such cases are based on your consent under Article 49(1)(a) of the General Data Protection Regulation (GDPR)."
+
+  # Section 5: Audio and Video Conferences
+  section5_title: "5. Audio and Video Conferences"
+  conference_data_processing_title: "Data Processing"
+  conference_tools_intro: |
+    We use online conference tools to communicate with our customers. The specific tools we use are listed below. When you communicate with us via video or audio conference over the internet, your personal data is collected and processed by us and the provider of the respective conference tool.
+  conference_tools_user_data_collection: |
+    The conference tools collect all data that you provide/use for using the tools (email address and/or your phone number). The conference tools also process the duration of the conference, the beginning and end (time) of participation, the number of participants, and other 'contextual information' related to the communication process (metadata).
+  conference_tools_technical_data_collection: |
+    In addition, the provider of the tool processes all technical data required for handling online communication. This includes, in particular, IP addresses, MAC addresses, device IDs, device type, operating system type and version, client version, camera type, microphone or speakers, and the type of connection.
+  conference_tools_content_data_storage: |
+    If content is exchanged, uploaded, or otherwise made available within the tool, this is also stored on the servers of the tool provider. This content includes, in particular, cloud recordings, chat/instant messages, voicemails, uploaded photos and videos, files, whiteboards, and other information shared during the use of the service.
+  conference_tools_data_processing_disclaimer: |
+    Please note that we have no full control over the data processing operations of the tools used. Our options are primarily determined by the corporate policies of the respective provider. Further information on data processing by the conference tools can be found in the privacy policies of the tools used, which are listed below.
+  conference_tools_purpose_title: "Purpose and Legal Basis"
+  conference_tools_purpose_description: |
+    The conference tools are used to communicate with prospective or existing contractual partners or to offer certain services to our customers (Art. 6 para. 1 lit. b GDPR). The use of the tools also serves to generally simplify and accelerate communication with us or our company (legitimate interest under Art. 6 para. 1 lit. f GDPR). If consent has been requested, the use of the respective tools is based on this consent; the consent can be revoked at any time with effect for the future.
+  conference_tools_storage_title: "Storage Duration"
+  conference_tools_storage_description1: |
+    The data collected directly by us through the video and conference tools will be deleted from our systems as soon as you request us to delete it, revoke your consent to storage, or the purpose for storing the data no longer applies. Stored cookies remain on your end device until you delete them. Mandatory legal retention periods remain unaffected.
+  conference_tools_storage_description2: |
+    We have no control over the retention period of your data that is stored by the operators of the conference tools for their purposes. For details, please refer directly to the operators of the conference tools.
+  conference_tools_used_title: "Conference Tools Used"
+  conference_tools_used_description: |
+    We use the following conference tools:
+
+  conference_tools_jitsi_title: "Jitsi Meet"
+  conference_tools_jitsi_description: |
+    We use Jitsi Meet. When you communicate with us via Jitsi Meet, all data related to this communication process is processed exclusively on servers within the European Union or a third country that is secure under data protection law.
+
+  conference_tools_avv_title: "Data Processing Agreement"
+  conference_tools_avv_description: |
+    We have concluded a data processing agreement (DPA) with the above-mentioned provider. This is a contract required by data protection law, which ensures that the provider processes the personal data of our website visitors only following our instructions and in compliance with the GDPR.
+
+services:
+  web_development:
+    title: "Web Development"
+    summary_title: "Custom website development"
+    description: ""
+    summary: "We offer comprehensive web development services, including responsive design, e-commerce solutions, CMS integration, and custom web applications. Our goal is to create websites that are not only visually appealing but also highly functional and optimized for performance across all devices."
+
+  ui_ux_design:
+    title: "UI/UX Design"
+    summary_title: "Designing user interfaces and experiences"
+    description: ""
+    summary: "Our UI/UX design services focus on creating engaging and intuitive user experiences. We conduct thorough user research, develop detailed wireframes, and craft visually appealing designs that enhance user interaction. Our designs aim to improve usability while reflecting your brand identity."
+
+  domain_registration:
+    title: "Domain Registration and Management"
+    summary_title: "Helping clients manage their domains"
+    description: ""
+    summary: "We offer comprehensive domain registration and management services, helping you secure the ideal domain for your business. Our services include domain name registration, DNS management, and domain privacy protection, all handled through trusted platforms. We ensure that your domain is efficiently managed and secure, so you can focus on running your business."
+
+  cloud_computing_services:
+    title: "Cloud Computing Services"
+    summary_title: "Providing cloud solutions"
+    description: ""
+    summary: "Our cloud computing services enable your business to scale efficiently while maintaining a reliable online presence. We offer cloud hosting solutions, server management, cloud migration, and backup and disaster recovery services, all powered by trusted, high-performance infrastructure. Our team ensures that your cloud environment is secure, optimized for performance, and ready to meet your business needs."
+
+  database_management:
+    title: "Database Management"
+    summary_title: "Setting up and managing databases"
+    description: ""
+    summary: "We specialize in database management, providing services that include database design, optimization, and security. Our solutions ensure that your databases are robust, scalable, and secure. We also offer backup and recovery solutions to protect your data and ensure business continuity."
+
+  seo_digital_marketing:
+    title: "SEO & Digital Marketing"
+    summary_title: "Improving your website’s visibility"
+    description: ""
+    summary: "Our SEO and digital marketing services are designed to enhance your online presence and drive targeted traffic to your website. We offer search engine optimization, pay-per-click advertising, social media marketing, and content marketing strategies to boost your visibility and grow your business."
+
+  support_maintenance:
+    title: "Support and Maintenance"
+    summary_title: "Ongoing support for your website"
+    description: ""
+    summary: "We provide comprehensive support and maintenance services to ensure your website operates smoothly at all times. Our services include regular updates, technical support, performance monitoring, and security audits. We are dedicated to keeping your online presence secure and optimized for peak performance."
+
+work_stages:
+  discovery_planning:
+    title: "Discovery & Planning"
+    summary_title: "Initial Project Planning"
+    summary: "We begin by thoroughly understanding client needs, defining clear project goals, and outlining the scope to ensure a well-structured approach. This stage sets the foundation for a successful project, aligning expectations and setting the stage for strategic execution."
+
+  research_strategy:
+    title: "Research & Strategy"
+    summary_title: "Strategic Research"
+    summary: "In this stage, we conduct comprehensive research and analysis to create a strategic plan. This includes market analysis, competitor benchmarking, and identifying key trends. The insights gained guide the development of a well-informed strategy that aligns with client objectives."
+
+  design_prototyping:
+    title: "Design & Prototyping"
+    summary_title: "Visualizing the Solution"
+    summary: "We move forward by creating detailed designs and interactive prototypes. These visual representations allow us to align all stakeholders, gather feedback, and make adjustments before development begins, ensuring that the final product meets both functional and aesthetic requirements."
+
+  development_implementation:
+    title: "Development & Implementation"
+    summary_title: "Building the Solution"
+    summary: "Our development team transforms the approved designs into a fully functional solution. During this phase, we write clean, efficient code and integrate various systems, ensuring that the solution is scalable, secure, and performs well under different conditions, preparing it for launch."
+
+  testing_quality_assurance:
+    title: "Testing & Quality Assurance"
+    summary_title: "Ensuring Quality"
+    summary: "Before deployment, the solution undergoes rigorous testing. This stage involves functional testing, performance testing, and user acceptance testing to ensure that the product meets all requirements, is free of bugs, and delivers a seamless user experience across all intended platforms."
+
+  launch_deployment:
+    title: "Launch & Deployment"
+    summary_title: "Releasing the Solution"
+    summary: "We carefully launch the solution, deploying it to the live environment. This stage involves final configuration, performance checks, and ensuring that everything is optimized for user access. We also monitor the deployment closely to address any immediate issues post-launch."
+
+  maintenance_support:
+    title: "Maintenance & Support"
+    summary_title: "Continuous Support"
+    summary: "Post-launch, we provide ongoing maintenance and support. This includes regular updates, performance monitoring, and addressing any issues that arise. Our goal is to ensure the solution remains functional, secure, and up-to-date with the latest technologies and industry standards."
+
+  review_optimization:
+    title: "Review & Optimization"
+    summary_title: "Post-Launch Optimization"
+    summary: "After the solution is live, we review its performance, gather user feedback, and identify areas for improvement. This stage is crucial for making adjustments and optimizations that enhance functionality, user experience, and overall effectiveness, ensuring long-term success."
+
+work_values:
+  clean_code:
+    title: "Clean Code"
+    summary: "Writing code that's easy to read, maintain, and scalable for future improvements."
+
+  security:
+    title: "Security"
+    summary: "Building solutions with security as a core feature, protecting data and ensuring system integrity."
+
+  performance:
+    title: "Performance"
+    summary: "Optimizing every aspect of our work to ensure fast, responsive, and efficient systems."
+
+  scalability:
+    title: "Scalability"
+    summary: "Designing systems that can grow and adapt with our clients' needs without compromising performance."
+
+  automation:
+    title: "Automation"
+    summary: "Implementing smart automation to streamline processes, reduce manual work, and increase efficiency."
+
+  testing:
+    title: "Testing"
+    summary: "We believe in rigorous testing to ensure stability, functionality, and bug-free experiences."
+
+  documentation:
+    title: "Documentation"
+    summary: "Providing clear and detailed documentation for easy handover and future development."
+
+  modularity:
+    title: "Modularity"
+    summary: "Developing modular solutions to ensure flexibility, reusability, and easier future updates."
+
+  maintainability:
+    title: "Maintainability"
+    summary: "Focusing on creating systems that are easy to maintain and extend over time."
+
+  data_integrity:
+    title: "Data Integrity"
+    summary: "Ensuring the accuracy, consistency, and security of data throughout all systems and processes."

@@ -1,0 +1,48 @@
+services:
+  apache:
+    depends_on:
+      - mariadb
+      - node
+    build:
+      dockerfile: docker/Dockerfile.dev.apache
+    volumes:
+      - ./assets:/var/www/html/assets 
+      - ./src:/var/www/html/src
+      - ./bin:/var/www/html/bin
+      - ./migrations:/var/www/html/migrations
+      - ./config:/var/www/html/config
+      - ./templates:/var/www/html/templates
+      - ./public:/var/www/html/public
+      - ./translations:/var/www/html/translations
+      - ./var:/var/www/html/var
+      - ./.env:/var/www/html/.env
+      - ./.env.dev:/var/www/html/.env.dev
+      - ./.env.prod:/var/www/html/.env.prod
+      - ./package.json:/var/www/html/package.json
+      - ./package-lock.json:/var/www/html/package-lock.json
+  node:
+    restart: always
+    build:
+      context: .
+      dockerfile: docker/Dockerfile.dev.node
+    volumes:
+      - ./public:/var/www/html/public
+      - ./assets:/var/www/html/assets
+      - ./package.json:/var/www/html/package.json
+      - ./package-lock.json:/var/www/html/package-lock.json
+      - ./webpack.config.js:/var/www/html/webpack.config.js
+      - ./.eslintrc.js:/var/www/html/.eslintrc.js
+      - ./.prettierrc.js:/var/www/html/.prettierrc.js
+      - ./.stylelintrc.json:/var/www/html/.stylelintrc.json
+      - ./.env.dev:/var/www/html/.env.dev
+      - ./.env.prod:/var/www/html/.env.prod
+      - ./node_modules:/var/www/html/node_modules
+  ngrok:
+    image: ngrok/ngrok
+    command: http host.docker.internal:8200 --basic-auth "${NGROK_USERNAME}:${NGROK_PASSWORD}"
+    ports:
+      - '4040:4040'
+    environment:
+      - NGROK_AUTHTOKEN=${NGROK_AUTHTOKEN}
+    depends_on:
+      - apache
