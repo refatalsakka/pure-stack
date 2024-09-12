@@ -56,6 +56,7 @@ COPY ./src ./src
 COPY ./templates ./templates
 COPY ./translations ./translations
 COPY ./migrations ./migrations
+COPY ./var ./var
 COPY ./.env ./.env
 COPY ./.env.prod ./.env.prod
 COPY --from=assets-builder /app/public/build ./public/build
