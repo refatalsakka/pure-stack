@@ -19,7 +19,7 @@ class ContactFormMailer
             ->from($this->from)
             ->to($this->recipient)
             ->subject('Sleeky Code Contact')
-            ->html("Name: {$name}<br>{$message}<br>Number: {$number}<br>Email: {$email}");
+            ->html("Name: {$name}<br>content: {$message}<br>Number: {$number}<br>Email: {$email}");
 
         try {
             $this->mailer->send($email);
