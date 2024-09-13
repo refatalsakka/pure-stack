@@ -46,3 +46,7 @@ services:
       - NGROK_AUTHTOKEN=${NGROK_AUTHTOKEN}
     depends_on:
       - apache
+  phpmyadmin:
+    environment:
+      PMA_USER: ${MARIADB_USER}
+      PMA_PASSWORD: ${MARIADB_ROOT_PASSWORD}
