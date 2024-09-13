@@ -52,6 +52,7 @@ COPY ./bin ./bin
 COPY ./config ./config
 COPY ./public/index.php ./public/index.php
 COPY ./public/robots.txt ./public/robots.txt
+COPY ./public/favicon.png ./public/favicon.png 
 COPY ./src ./src
 COPY ./templates ./templates
 COPY ./translations ./translations
