@@ -27,9 +27,11 @@ document.addEventListener('DOMContentLoaded', () => {
     sections.forEach((section, i) => {
       section.addEventListener('click', () => {
         sections.slice(0, i + 1).forEach((activeSection) => {
-          activeSection.classList.add('active')
           activeSection.classList.remove('animation')
           activeSection.nextElementSibling.classList.add('animation')
+          setTimeout(() => {
+            activeSection.classList.add('active')
+          }, 0)
         })
       })
     })
