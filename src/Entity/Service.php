@@ -43,6 +43,9 @@ class Service
     #[ORM\OneToMany(targetEntity: SubService::class, mappedBy: 'service')]
     private Collection $subServices;
 
+    #[ORM\Column(type: Types::SMALLINT)]
+    private ?int $sort = null;
+
     public function __construct()
     {
         $this->subServices = new ArrayCollection();
@@ -163,6 +166,18 @@ class Service
     public function setTranslationKey(string $translationKey): static
     {
         $this->translationKey = $translationKey;
+
+        return $this;
+    }
+
+    public function getSort(): ?int
+    {
+        return $this->sort;
+    }
+
+    public function setSort(int $sort): static
+    {
+        $this->sort = $sort;
 
         return $this;
     }

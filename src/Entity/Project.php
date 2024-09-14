@@ -43,6 +43,9 @@ class Project
     #[ORM\Column(type: Types::TEXT)]
     private ?string $summary = null;
 
+    #[ORM\Column(type: Types::SMALLINT)]
+    private ?int $sort = null;
+
     public function __construct()
     {
         $this->technologies = new ArrayCollection();
@@ -157,6 +160,18 @@ class Project
     public function setTranslationKey(string $translationKey): static
     {
         $this->translationKey = $translationKey;
+
+        return $this;
+    }
+
+    public function getSort(): ?int
+    {
+        return $this->sort;
+    }
+
+    public function setSort(int $sort): static
+    {
+        $this->sort = $sort;
 
         return $this;
     }

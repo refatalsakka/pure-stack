@@ -18,10 +18,10 @@ class HomeController extends AbstractController
         WorkValueRepository $workValueRepository
     ): Response
     {
-        $services = $serviceRepository->findAll();
-        $projects = $projectRepository->findAll();
-        $workStages = $workStageRepository->findAll();
-        $workValues = $workValueRepository->findAll();
+        $services = $serviceRepository->findAllSortedBySort();
+        $projects = $projectRepository->findAllSortedBySort();
+        $workStages = $workStageRepository->findAllSortedBySort();
+        $workValues = $workValueRepository->findAllSortedBySort();
 
         return $this->render('home/index.html.twig', [
             'projects' => $projects,
