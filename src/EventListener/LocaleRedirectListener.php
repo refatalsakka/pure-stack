@@ -15,8 +15,8 @@ class LocaleRedirectListener
         $request = $event->getRequest();
 
         if ($request->isMethod('GET') && $request->getPathInfo() == '/') {
-            $uri = $this->router->generate($request->attributes->get('_route'), array_merge(
-                $request->attributes->get('_route_params'),
+            $uri = $this->router->generate($request->attributes->get('_route'), parameters: array_merge(
+                $request->attributes->get('_route_params', []),
                 ['_locale' => $this->defaultLocale]
             ));
 
