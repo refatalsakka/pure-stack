@@ -28,6 +28,8 @@ document.addEventListener('DOMContentLoaded', () => {
       section.addEventListener('click', () => {
         sections.slice(0, i + 1).forEach((activeSection) => {
           activeSection.classList.add('active')
+          activeSection.classList.remove('animation')
+          activeSection.nextElementSibling.classList.add('animation')
         })
       })
     })
@@ -39,6 +41,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
       if (lastActiveSection) {
         lastActiveSection.classList.remove('active')
+        lastActiveSection.classList.add('animation')
+        lastActiveSection.nextElementSibling.classList.remove('animation')
       }
     })
 
@@ -72,6 +76,10 @@ document.addEventListener('DOMContentLoaded', () => {
             sections.reverse().forEach((section, i) => {
               setTimeout(() => {
                 section.classList.remove('active')
+
+                if (i === sections.length - 1) {
+                  section.classList.add('animation')
+                }
               }, i * 350)
             })
 

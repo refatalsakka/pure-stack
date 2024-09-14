@@ -150,7 +150,7 @@
 			}
 		}
 
-		>.service.active~.back {
+		>.service.active:not(:first-of-type)~.back {
 			display: block;
 		}
 
@@ -271,6 +271,39 @@
 
 				@if $i>1 {
 					clip-path: ellipse(100vw #{$vh1} at #{$vw2} #{$vh2});
+
+					&.animation {
+						animation: scaleClipPath-#{$i} 1.3s ease-in-out infinite;
+						animation-delay: 0.3s; 
+	
+						@keyframes scaleClipPath-#{$i} {
+							0% {
+								clip-path: ellipse(100vw #{$vh1} at #{$vw2} #{$vh2});
+							}
+							50% {
+								clip-path: ellipse(100vw #{$vh1} at #{$vw2} #{$vh2-hover});
+							}
+							100% {
+								clip-path: ellipse(100vw #{$vh1} at #{$vw2} #{$vh2});
+							}
+						}
+					}
+
+					&.service.active {
+						clip-path: ellipse(100vw 100vh at 50vw 50vh);
+					}
+	
+					&:not(.service.active) {
+						cursor: pointer;
+	
+						.content {
+							opacity: 0;
+						}
+	
+						&:hover {
+							clip-path: ellipse(100vw #{$vh1} at #{$vw2} #{$vh2-hover});
+						}
+					}
 				}
 
 				a {
@@ -284,22 +317,6 @@
 					&:hover {
 						background: $text-color;
 						color: $background-color;
-					}
-				}
-
-				&.service.active {
-					clip-path: ellipse(100vw 100vh at 50vw 50vh);
-				}
-
-				&:not(.service.active, :first-of-type) {
-					cursor: pointer;
-
-					.content {
-						opacity: 0;
-					}
-
-					&:hover {
-						clip-path: ellipse(100vw #{$vh1} at #{$vw2} #{$vh2-hover});
 					}
 				}
 			}
