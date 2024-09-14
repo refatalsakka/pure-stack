@@ -126,11 +126,11 @@
 			}
 		}
 		.back {
-			background: #fff;
+			background: transparent;
 			border-radius: 50%;
 			cursor: pointer;
 			display: none;
-			mix-blend-mode: overlay;
+			mix-blend-mode: luminosity;
 			padding: 5px;
 			position: absolute;
 			right: 10px;
@@ -139,6 +139,8 @@
 			user-select: none;
 			width: 50px;
 			z-index: 9;
+			border: 1px solid #6e83b7;
+			transition: all 0.3s ease;
 
 			@media (width <=720px) {
 				width: 30px;
@@ -146,7 +148,8 @@
 
 			&:hover {
 				padding: 7px;
-				rotate: -20deg;
+				rotate: 90deg;
+				padding: 8px;
 			}
 		}
 
