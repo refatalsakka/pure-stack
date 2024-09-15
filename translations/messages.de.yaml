@@ -48,7 +48,7 @@ home:
       name: Name
       email: Email
       telephone_number: Telephone number
-      terms_read: Ich habe die <a href="/privacy-policy">Datenschutzerklärung</a> gelesen und stimme diesen zu.
+      terms_read: Ich habe die <a href="/de/privacy-policy">Datenschutzerklärung</a> gelesen und stimme diesen zu.
       your_message: Ihre Nachricht
       send: Senden
       error_message: Etwas ist schiefgelaufen, bitte versuchen Sie es erneut..

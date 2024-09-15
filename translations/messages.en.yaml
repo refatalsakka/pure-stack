@@ -48,7 +48,7 @@ home:
       name: Name
       email: Email
       telephone_number: Telefonnummer
-      terms_read: I have read and agree to the <a href="/privacy-policy">terms and conditions</a>.
+      terms_read: I have read and agree to the <a href="/en/privacy-policy">terms and conditions</a>.
       your_message: Your message
       send: Send
       error_message: Something went wrong, please try again.
