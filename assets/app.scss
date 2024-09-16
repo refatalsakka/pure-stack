@@ -191,8 +191,9 @@ p {
   }
 
   .d-flex.navbar-actions {
-    align-items: center;
+		align-items: center;
     gap: 25px;
+		justify-content: end;
   }
 
   .nav-link {
