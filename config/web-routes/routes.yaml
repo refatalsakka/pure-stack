@@ -13,6 +13,10 @@ imprint:
     path: /{_locale}/imprint
     controller: App\Controller\StaticPageController::imprint
     methods: GET
+    options:
+        sitemap: 
+            changefreq: yearly
+            priority: 0.7
     requirements:
         _locale: '%ALLOWED_LANGUAGES%'
 
@@ -20,6 +24,10 @@ privacy-policy:
     path: /{_locale}/privacy-policy
     controller: App\Controller\StaticPageController::privacyPolicy
     methods: GET
+    options:
+        sitemap: 
+            changefreq: yearly
+            priority: 0.7
     requirements:
         _locale: '%ALLOWED_LANGUAGES%'
 
@@ -27,6 +35,10 @@ terms-and-conditions:
     path: /{_locale}/terms-and-conditions
     controller: App\Controller\StaticPageController::termsAndConditions
     methods: GET
+    options:
+        sitemap: 
+            changefreq: yearly
+            priority: 0.7
     requirements:
         _locale: '%ALLOWED_LANGUAGES%'
 
