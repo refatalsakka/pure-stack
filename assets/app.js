@@ -4,11 +4,17 @@ import './app.scss'
 document.addEventListener('DOMContentLoaded', () => {
   ;(() => {
     const { hostname } = window.location
+
+    console.log(hostname);
+
     if (
       hostname !== process.env.DOMAIN_NAME ||
       !hostname.endsWith(process.env.DOMAIN_NAME)
     ) {
+      console.log(hostname, 'no');
       return
+    } else {
+      console.log(hostname, 'yes');
     }
 
     const _paq = (window._paq = window._paq || [])
