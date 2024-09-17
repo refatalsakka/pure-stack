@@ -5,8 +5,6 @@ document.addEventListener('DOMContentLoaded', () => {
   ;(() => {
     const { hostname } = window.location
 
-    console.log(hostname, process.env.DOMAIN_NAME);
-
     if (
       hostname !== process.env.DOMAIN_NAME ||
       !hostname.endsWith(process.env.DOMAIN_NAME)
