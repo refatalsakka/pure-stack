@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
     _paq.push(['trackPageView'])
     _paq.push(['enableLinkTracking'])
     ;(function () {
-      const u = '//localhost:8081/'
+      const u = 'http://localhost:8081/'
       _paq.push(['setTrackerUrl', `${u}matomo.php`])
       _paq.push(['setSiteId', '1'])
       const d = document
