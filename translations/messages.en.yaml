@@ -262,9 +262,13 @@ privacy_policy:
   section6_title: "6. Analysis Tools and Advertising"
   matomo_title: "Matomo"
   matomo_intro: "This website uses the open-source web analytics service Matomo."
-  matomo_description: "With the help of Matomo, we analyze anonymized data about the use of our website. This allows us to track page views and determine general information, such as the visitor's region. No personal data is collected, as IP addresses are anonymized and no cookies are used. We also gather technical information, such as referrers, browsers, and operating systems, to optimize our website."
-  matomo_legal_basis: "The use of Matomo is based on Article 6(1)(f) of the GDPR. Our legitimate interest lies in analyzing user behavior to improve our services. Since no personal data is collected, explicit consent is not required. If the 'Do Not Track' setting is enabled in your browser, it will be respected and tracking will be automatically disabled."
-  matomo_opt_out: "An opt-out to prevent the collection of anonymized data is not necessary, as your privacy is already protected through data anonymization. No cookies are used to track data across sessions, and your anonymity remains intact even after revisiting the site."
+  matomo_description: "With the help of Matomo, we are able to collect and analyze data about how visitors use our website. This allows us to find out, for example, when page views occur and from which region they come. We also collect various log files (e.g., IP addresses, referrers, browsers, and operating systems) and can measure whether our website visitors perform specific actions (e.g., clicks, purchases, etc.)."
+  matomo_legal_basis_1: "The use of this analytics tool is based on Article 6(1)(f) of the GDPR. The website operator has a legitimate interest in analyzing user behavior to optimize both their web offering and their advertising. If explicit consent has been requested, processing will only take place based on Article 6(1)(a) of the GDPR and § 25(1) TTDSG, as far as consent covers the storage of cookies or access to information on the user's device (e.g., device fingerprinting) in accordance with TTDSG. Consent can be withdrawn at any time."
+  matomo_legal_basis_2: "If you do not wish for your data to be analyzed and stored, you can prevent this by deactivating the checkbox below. In this case, an opt-out cookie will be placed in your browser to prevent the collection of your usage data. However, note that deleting your cookies will also remove the opt-out cookie, and you will need to activate it again on your next visit to this platform."
+  matomo_ip_anonymization_title: "IP Anonymization"
+  matomo_ip_anonymization_description: "In our analysis with Matomo, we use IP anonymization. Your IP address is shortened before analysis so that it can no longer be uniquely assigned to you."
+  matomo_ip_cookieless_analysis_title: "Cookieless Analysis"
+  matomo_ip_cookieless_analysis_description: "We have configured Matomo so that it does not store cookies in your browser."
 
 services:
   web_development:
