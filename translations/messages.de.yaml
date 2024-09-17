@@ -259,6 +259,13 @@ privacy_policy:
   conference_tools_avv_description: |
     Wir haben einen Vertrag über Auftragsverarbeitung (AVV) mit dem oben genannten Anbieter geschlossen. Hierbei handelt es sich um einen datenschutzrechtlich vorgeschriebenen Vertrag, der gewährleistet, dass dieser die personenbezogenen Daten unserer Websitebesucher nur nach unseren Weisungen und unter Einhaltung der DSGVO verarbeitet.
 
+  section6_title: "6. Analyse-Tools und Werbung"
+  matomo_title: "Matomo"
+  matomo_intro: "Diese Website benutzt den Open Source Webanalysedienst Matomo."
+  matomo_description: "Mit Hilfe von Matomo analysieren wir anonymisierte Daten über die Nutzung unserer Website. Dies ermöglicht es uns, Seitenaufrufe nachzuvollziehen und allgemeine Informationen wie die Region des Besuchers zu ermitteln. Hierbei werden keine persönlichen Daten erhoben, da die IP-Adressen anonymisiert und keine Cookies verwendet werden. Wir erfassen außerdem technische Informationen wie den Referrer, den verwendeten Browser und das Betriebssystem, um unsere Website zu optimieren."
+  matomo_legal_basis: "Die Nutzung von Matomo erfolgt auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO. Unser berechtigtes Interesse liegt in der Analyse des Nutzerverhaltens zur Verbesserung unseres Angebots. Da keine personenbezogenen Daten erhoben werden, ist keine explizite Einwilligung erforderlich. Sollte dennoch die 'Do Not Track'-Einstellung Ihres Browsers aktiviert sein, wird dies berücksichtigt und das Tracking automatisch deaktiviert."
+  matomo_opt_out: "Ein Opt-out, um die Erfassung der anonymisierten Daten zu verhindern, ist nicht notwendig, da Ihre Privatsphäre durch die Anonymisierung der Daten bereits geschützt ist. Es werden keine Cookies verwendet, die über mehrere Sitzungen hinweg Daten speichern, und Ihre Anonymität bleibt auch nach einem erneuten Besuch der Seite gewahrt."
+
 services:
   web_development:
     title: "Webentwicklung"

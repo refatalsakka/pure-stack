@@ -1,4 +1,8 @@
+const dotenv = require('dotenv');
+const webpack = require('webpack');
 const Encore = require('@symfony/webpack-encore')
+
+dotenv.config();
 
 // Manually configure the runtime environment if not already configured yet by the "encore" command.
 // It's useful when you use tools that rely on webpack.config.js file.
@@ -25,7 +29,7 @@ Encore
     to: 'shapes/[path][name].[ext]',
     pattern: /\.(png|jpg|jpeg|svg)$/
   })
-  
+
   .copyFiles({
     from: './assets/images',
     to: 'images/[path][name].[ext]',
@@ -61,7 +65,7 @@ Encore
   .enableBuildNotifications()
   .enableSourceMaps(!Encore.isProduction())
   // enables hashed filenames (e.g. app.abc123.css)
-  .enableVersioning(!Encore.isProduction())
+  .enableVersioning(Encore.isProduction())
 
   // configure Babel
   // .configureBabel((config) => {
@@ -75,11 +79,17 @@ Encore
   // })
 
   // enables Sass/SCSS support
-  .enableSassLoader(function(sassOptions) {}, {
-    resolveUrlLoader: true  // Enable resolve-url-loader
+  .enableSassLoader(function () {}, {
+    resolveUrlLoader: true // Enable resolve-url-loader
   })
 
-
-console.log(process.env.NODE_ENV);
+  // Add this plugin to expose your environment variables
+  .addPlugin(new webpack.DefinePlugin({
+    'process.env': {
+      'DOMAIN_NAME': JSON.stringify(process.env.DOMAIN_NAME),
+    }
+  }))
+// other configurations...
+console.log( JSON.stringify(process.env));
 
 module.exports = Encore.getWebpackConfig()

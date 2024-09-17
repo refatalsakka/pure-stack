@@ -34,6 +34,7 @@ services:
       - ./.eslintrc.js:/var/www/html/.eslintrc.js
       - ./.prettierrc.js:/var/www/html/.prettierrc.js
       - ./.stylelintrc.json:/var/www/html/.stylelintrc.json
+      - ./.env:/var/www/html/.env
       - ./.env.dev:/var/www/html/.env.dev
       - ./.env.prod:/var/www/html/.env.prod
       - ./node_modules:/var/www/html/node_modules

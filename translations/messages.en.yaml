@@ -258,6 +258,13 @@ privacy_policy:
   conference_tools_avv_title: "Data Processing Agreement"
   conference_tools_avv_description: |
     We have concluded a data processing agreement (DPA) with the above-mentioned provider. This is a contract required by data protection law, which ensures that the provider processes the personal data of our website visitors only following our instructions and in compliance with the GDPR.
+  
+  section6_title: "6. Analysis Tools and Advertising"
+  matomo_title: "Matomo"
+  matomo_intro: "This website uses the open-source web analytics service Matomo."
+  matomo_description: "With the help of Matomo, we analyze anonymized data about the use of our website. This allows us to track page views and determine general information, such as the visitor's region. No personal data is collected, as IP addresses are anonymized and no cookies are used. We also gather technical information, such as referrers, browsers, and operating systems, to optimize our website."
+  matomo_legal_basis: "The use of Matomo is based on Article 6(1)(f) of the GDPR. Our legitimate interest lies in analyzing user behavior to improve our services. Since no personal data is collected, explicit consent is not required. If the 'Do Not Track' setting is enabled in your browser, it will be respected and tracking will be automatically disabled."
+  matomo_opt_out: "An opt-out to prevent the collection of anonymized data is not necessary, as your privacy is already protected through data anonymization. No cookies are used to track data across sessions, and your anonymity remains intact even after revisiting the site."
 
 services:
   web_development:
