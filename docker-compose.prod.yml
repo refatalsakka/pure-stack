@@ -5,3 +5,15 @@ services:
     env_file:
       - .env
       - .env.prod
+  matomo:
+    image: matomo
+    ports:
+      - 8081:80
+    environment:
+      MATOMO_DATABASE_HOST: mariadb
+      MATOMO_DATABASE_ADAPTER: mysql
+      MATOMO_DATABASE_TABLES_PREFIX: matomo_
+      MATOMO_DATABASE_USERNAME: ${MARIADB_USER}
+      MATOMO_DATABASE_PASSWORD: ${MARIADB_ROOT_PASSWORD}
+    depends_on:
+      - mariadb

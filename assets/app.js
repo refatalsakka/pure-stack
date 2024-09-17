@@ -13,22 +13,23 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     const _paq = (window._paq = window._paq || [])
+    /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
     _paq.push(['setDocumentTitle', `${document.domain}/${document.title}`])
-    _paq.push(['setCookieDomain', `*.${process.env.DOMAIN_NAME}`])
-    _paq.push(['setDomains', [`*.${process.env.DOMAIN_NAME}`]])
+    _paq.push(['setCookieDomain', '*.sleekycode.com'])
+    _paq.push(['setDomains', ['*.sleekycode.com']])
     _paq.push(['setDoNotTrack', true])
     _paq.push(['disableCookies'])
     _paq.push(['trackPageView'])
     _paq.push(['enableLinkTracking'])
     ;(function () {
-      const u = 'https://sleekycode.matomo.cloud/'
+      const u = '//localhost:8081/'
       _paq.push(['setTrackerUrl', `${u}matomo.php`])
       _paq.push(['setSiteId', '1'])
       const d = document
       const g = d.createElement('script')
       const s = d.getElementsByTagName('script')[0]
       g.async = true
-      g.src = 'https://cdn.matomo.cloud/sleekycode.matomo.cloud/matomo.js'
+      g.src = `${u}matomo.js`
       s.parentNode.insertBefore(g, s)
     })()
   })()
