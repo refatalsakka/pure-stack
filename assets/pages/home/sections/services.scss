@@ -151,6 +151,10 @@
 				rotate: 90deg;
 				padding: 8px;
 			}
+
+			&:active {
+				scale: 0.8;
+			}
 		}
 
 		>.service.active:not(:first-of-type)~.back {
