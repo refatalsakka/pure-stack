@@ -87,6 +87,7 @@ Encore
   .addPlugin(new webpack.DefinePlugin({
     'process.env': {
       'DOMAIN_NAME': JSON.stringify(process.env.DOMAIN_NAME),
+      'MATOMO_DOMAIN_NAME': JSON.stringify(process.env.MATOMO_DOMAIN_NAME),
     }
   }))
 // other configurations...
