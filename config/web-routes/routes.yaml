@@ -31,17 +31,6 @@ privacy-policy:
     requirements:
         _locale: '%ALLOWED_LANGUAGES%'
 
-terms-and-conditions:
-    path: /{_locale}/terms-and-conditions
-    controller: App\Controller\StaticPageController::termsAndConditions
-    methods: GET
-    options:
-        sitemap: 
-            changefreq: yearly
-            priority: 0.7
-    requirements:
-        _locale: '%ALLOWED_LANGUAGES%'
-
 contact:
     path: /contact
     controller: App\Controller\ContactController::index
