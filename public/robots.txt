@@ -1,3 +1,3 @@
 User-agent: *
-Sitemap: http://localhost:8200/sitemap.en.xml
-Sitemap: http://localhost:8200/sitemap.de.xml
+Sitemap: http://sleekycode.com/sitemap.en.xml
+Sitemap: http://sleekycode.com/sitemap.de.xml
