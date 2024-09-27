@@ -122,11 +122,10 @@ privacy_policy:
   section2_title: "2. Hosting"
   hosting_provider_title: "AWS (Amazon Web Services)"
   hosting_provider_description: "We host our website with AWS (Amazon Web Services). The provider is Amazon Web Services, Inc., 410 Terry Avenue North, Seattle WA 98109, USA (hereinafter AWS)."
-  hosting_provider_link: "Details can be found in AWS's privacy policy: <a href=\"https://aws.amazon.com/privacy/\" target=\"_blank\">AWS privacy policy</a>."
-  hosting_provider_legal_basis: "The use of AWS is based on Art. 6 para. 1 lit. f GDPR. We have a legitimate interest in ensuring the most reliable possible presentation of our website."
 
   processing_agreement_title: "Data Processing Agreement"
-  processing_agreement_description: "We have concluded a data processing contract (DPA) with the above-mentioned provider. This is a contract required by data protection law, which ensures that this provider processes the personal data of our website visitors only according to our instructions and in compliance with the GDPR."
+  processing_agreement_description: "We use the cloud services of Amazon Web Services (AWS) to operate our website. AWS processes personal data exclusively according to our instructions and in compliance with the applicable data protection regulations under the GDPR. We use only servers within the EU, which generally prevents any transfer to third countries. Should such a transfer occur, we rely on the Standard Contractual Clauses (SCCs) according to Art. 46 GDPR as well as the certification under the EU-US Data Privacy Framework to ensure an adequate level of data protection."
+  processing_agreement_link: "Details can be found in <a href=\"https://aws.amazon.com/privacy/\" target=\"_blank\">AWS privacy policy</a> and in <a href=\"https://docs.aws.amazon.com/whitepapers/latest/navigating-gdpr-compliance/aws-data-processing-addendum-dpa.html\" target=\"_blank\">AWS Data Processing Addendum (DPA)</a>."
 
   # Section 3: General Information and Mandatory Information
   section3_title: "3. General Information and Mandatory Information"

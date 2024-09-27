@@ -122,11 +122,10 @@ privacy_policy:
   section2_title: "2. Hosting"
   hosting_provider_title: "AWS (Amazon Web Services)"
   hosting_provider_description: "Wir hosten unsere Website bei AWS (Amazon Web Services). Anbieter ist die Amazon Web Services, Inc., 410 Terry Avenue North, Seattle WA 98109, USA (nachfolgend AWS)."
-  hosting_provider_link: "Details finden Sie in der Datenschutzerklärung von AWS: <a href=\"https://aws.amazon.com/de/privacy/?nc1=h_ls\" target=\"_blank\">AWS Datenschutzerklärung</a>."
-  hosting_provider_legal_basis: "Die Nutzung von AWS erfolgt auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO. Wir haben ein berechtigtes Interesse an der möglichst zuverlässigen Darstellung unserer Website."
 
   processing_agreement_title: "Auftragsverarbeitung"
-  processing_agreement_description: "Wir haben einen Vertrag über Auftragsverarbeitung (AVV) mit dem oben genannten Anbieter geschlossen. Hierbei handelt es sich um einen datenschutzrechtlich vorgeschriebenen Vertrag, der gewährleistet, dass dieser die personenbezogenen Daten unserer Websitebesucher nur nach unseren Weisungen und unter Einhaltung der DSGVO verarbeitet."
+  processing_agreement_description: "Wir nutzen die Cloud-Dienste von Amazon Web Services (AWS) zur Bereitstellung unserer Website. AWS verarbeitet personenbezogene Daten ausschließlich nach unseren Weisungen und in Übereinstimmung mit den geltenden Datenschutzbestimmungen gemäß DSGVO. Wir nutzen ausschließlich Server in der EU, wodurch eine Übertragung in Drittländer grundsätzlich ausgeschlossen ist. Sollte dennoch eine solche Übertragung stattfinden, stützen wir uns auf die Standardvertragsklauseln (SCCs) gemäß Art. 46 DSGVO sowie auf die Zertifizierung unter dem EU-US Data Privacy Framework, um ein angemessenes Schutzniveau sicherzustellen."
+  processing_agreement_link: "Details finden Sie in der <a href=\"https://aws.amazon.com/de/privacy/?nc1=h_ls\" target=\"_blank\">Datenschutzerklärung von AWS</a> und <a href=\"https://docs.aws.amazon.com/whitepapers/latest/navigating-gdpr-compliance/aws-data-processing-addendum-dpa.html\" target=\"_blank\">AWS Data Processing Addendum (DPA)</a>."
 
   # Section 3: Allgemeine Hinweise und Pflichtinformationen
   section3_title: "3. Allgemeine Hinweise und Pflicht­informationen"
