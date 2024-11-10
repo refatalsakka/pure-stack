@@ -26,7 +26,7 @@
 						<div class="col-xl-6 col-lg-12">
 							<div class="content">
 								<h2>{{ ('services.' ~ service.translationKey ~ '.title')|trans }}</h2>
-								<a href="#contact" class="btn cafe-btn">{{ "home.services_section.cafe_btn"|trans }}</a>
+								<a href="#contact" class="btn coffee-btn">{{ "home.services_section.coffee_btn"|trans }}</a>
 							</div>
 						</div>
 						<div class="col-xl-6 col-lg-12">
@@ -46,7 +46,7 @@
 			<img src="{{ asset("build/images/common/squirrel.png") }}" alt="squirrel"/>
 		</div>
 		{% for i in 1..7 %}
-			<img src="{{ asset("build/shapes/home-service-section/cafe-" ~ i ~ ".svg") }}" alt="cafe {{ i }}" class="cafe-bottom-right cafe-bottom-right-{{ i }}"/>
+			<img src="{{ asset("build/shapes/home-service-section/coffee-" ~ i ~ ".svg") }}" alt="coffee {{ i }}" class="coffee-bottom-right coffee-bottom-right-{{ i }}"/>
 		{% endfor %}
 	</div>
 </section>

@@ -14,8 +14,8 @@ document.addEventListener('DOMContentLoaded', () => {
     })
   })()
   ;(() => {
-    const cafeBtnsElm = [
-      ...document.querySelectorAll('.services-container .cafe-btn')
+    const coffeeBtnsElm = [
+      ...document.querySelectorAll('.services-container .coffee-btn')
     ]
     const backElm = document.querySelector('.services-container .back')
     const servicesContainerElm = document.querySelector('.services-container')
@@ -48,15 +48,15 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     })
 
-    cafeBtnsElm.forEach((cafeBtnElm, i) => {
-      cafeBtnElm.addEventListener('mouseover', () => {
+    coffeeBtnsElm.forEach((coffeeBtnElm, i) => {
+      coffeeBtnElm.addEventListener('mouseover', () => {
         document
-          .querySelector(`.services-container .cafe-bottom-right-${i + 1}`)
+          .querySelector(`.services-container .coffee-bottom-right-${i + 1}`)
           .classList.add('active')
       })
-      cafeBtnElm.addEventListener('mouseleave', () => {
+      coffeeBtnElm.addEventListener('mouseleave', () => {
         document
-          .querySelector(`.services-container .cafe-bottom-right-${i + 1}`)
+          .querySelector(`.services-container .coffee-bottom-right-${i + 1}`)
           .classList.remove('active')
       })
     })
