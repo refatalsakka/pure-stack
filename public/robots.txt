@@ -1,3 +1,3 @@
 User-agent: *
-Sitemap: http://sleekycode.com/sitemap.en.xml
-Sitemap: http://sleekycode.com/sitemap.de.xml
+Sitemap: http://purestack.tech/sitemap.en.xml
+Sitemap: http://purestack.tech/sitemap.de.xml

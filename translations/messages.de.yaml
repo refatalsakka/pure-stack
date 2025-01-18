@@ -58,16 +58,14 @@ imprint:
   title: Impressum
   legal_section:
     title: Legal
-    company: "Firma: Sleeky Code UG (haftungsbeschränkt)"
-    registration_number: "Handelsregisternummer: HRB 264833 B"
-    court: "Registergericht: Amtsgericht Berlin (Charlottenburg)"
-    vat_id: "Umsatzsteuer-Identifikationsnummer gemäß § 27 a Umsatzsteuergesetz: DE369221495"
+    company: "Firma: Pure Stack (Einzelunternehmen)"
+    vat_id: "Gemäß § 19 UStG wird keine Umsatzsteuer erhoben."
     represented_by: "Vertreten durch: Refat Alsakka"
   editorial_section:
     title: Redaktionell verantwortlich
     name: "Name: Refat Alsakka"
-    care_of: "c/o Sleeky Code UG"
-    address: "Anschrift: Mühlenstraße 8A, 14167 Berlin"
+    care_of: "c/o Pure Stack"
+    address: "Anschrift: An der Steinernen Bank 10, 93080 Pentling"
   liability_section:
     title: Haftung für Inhalte
     content: "Die Inhalte unserer Seiten wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen."
@@ -81,11 +79,11 @@ imprint:
     title: Bankverbindung
   address_section:
     title: Adresse
-    company: Sleeky Code UG
-    address: Mühlenstraße 8A, 14167 Berlin
+    company: Pure Stack
+    address: An der Steinernen Bank 10, 93080 Pentling
   contact_details_section:
     title: Kontaktangaben
-    email: 'E-Mail: contact@sleekycode.com'
+    email: 'E-Mail: contact@purestack.tech'
     telefon: 'Telefon: 0176 35436667'
   open_hours_section:
     title: Öffnungszeiten
@@ -140,9 +138,9 @@ privacy_policy:
   responsible_notice_title: "Hinweis zur verantwortlichen Stelle"
   responsible_person_info: "Die verantwortliche Stelle für die Datenverarbeitung auf dieser Website ist:"
   responsible_name: "Refat Alsakka"
-  responsible_address: "c/o Sleeky Code UG (haftungsbeschränkt)<br>Mühlenstraße 8A<br>14167 Berlin<br>Germany"
+  responsible_address: "c/o Pure Stack (haftungsbeschränkt)<br>Mühlenstraße 8A<br>14167 Berlin<br>Germany"
   responsible_contact: "Telefon: 0176 35436667"
-  responsible_email: "E-Mail: refat.alsakka@sleekycode.com"
+  responsible_email: "E-Mail: refat.alsakka@purestack.tech"
   
   storage_duration_title: "Speicherdauer"
   storage_duration_description: "Soweit innerhalb dieser Datenschutzerklärung keine speziellere Speicherdauer genannt wurde, verbleiben Ihre personenbezogenen Daten bei uns, bis der Zweck für die Datenverarbeitung entfällt. Wenn Sie ein berechtigtes Löschersuchen geltend machen oder eine Einwilligung zur Datenverarbeitung widerrufen, werden Ihre Daten gelöscht, sofern wir keine anderen rechtlich zulässigen Gründe für die Speicherung Ihrer personenbezogenen Daten haben (z. B. steuer- oder handelsrechtliche Aufbewahrungsfristen); im letztgenannten Fall erfolgt die Löschung nach Fortfall dieser Gründe."

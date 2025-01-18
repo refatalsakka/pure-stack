@@ -15,6 +15,6 @@ services:
       MATOMO_DATABASE_TABLES_PREFIX: matomo_
       MATOMO_DATABASE_USERNAME: ${MARIADB_USER}
       MATOMO_DATABASE_PASSWORD: ${MARIADB_ROOT_PASSWORD}
-      MATOMO_TRUSTED_HOSTS[]: matomo.sleekycode.com
+      MATOMO_TRUSTED_HOSTS[]: matomo.purestack.tech
     depends_on:
       - mariadb

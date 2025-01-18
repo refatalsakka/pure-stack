@@ -18,7 +18,7 @@ class ContactFormMailer
         $email = (new Email())
             ->from($this->from)
             ->to($this->recipient)
-            ->subject('Sleeky Code Contact')
+            ->subject('Pure Stack Contact')
             ->html("Name: {$name}<br>content: {$message}<br>Number: {$number}<br>Email: {$email}");
 
         try {

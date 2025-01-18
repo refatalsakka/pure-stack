@@ -1,5 +1,5 @@
 import './sections/hero'
-// import './sections/projects'
+import './sections/projects'
 import './sections/services'
 import './sections/workflows'
 import './sections/workValue'
