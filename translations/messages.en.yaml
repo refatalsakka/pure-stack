@@ -80,7 +80,9 @@ imprint:
   address_section:
     title: Adresse
     company: Pure Stack
-    address: An der Steinernen Bank 10, 93080 Pentling
+    address: 
+      street: An der Steinernen Bank 10
+      city: 93080 Pentling
   contact_details_section:
     title: Contact details
     email: 'E-Mail: contact@purestack.tech'

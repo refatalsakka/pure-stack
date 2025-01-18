@@ -67,13 +67,14 @@ p:not(:last-of-type) {
     }
 
     .info {
-      align-items: center;
+			align-items: center;
       color: $white;
       display: flex;
       flex-direction: column;
       justify-content: space-evenly;
       padding: 12px;
       position: relative;
+			text-align: center;
 
       @media (width <= 720px) {
 				align-items: start;
