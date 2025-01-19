@@ -10,7 +10,8 @@ class ContactFormMailer
     public function __construct(
         private MailerInterface $mailer,
         private string $recipient,
-        private string $from
+        private string $from,
+        private string $cc,
     ) {}
 
     public function send(string $name, string $email, string $number, string $message): void
@@ -18,7 +19,8 @@ class ContactFormMailer
         $email = (new Email())
             ->from($this->from)
             ->to($this->recipient)
-            ->subject('Pure Stack Contact')
+            ->cc($this->cc)
+            ->subject('Pure Stack Contact Page')
             ->html("Name: {$name}<br>content: {$message}<br>Number: {$number}<br>Email: {$email}");
 
         try {
