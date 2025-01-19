@@ -43,7 +43,6 @@ services:
         arguments:
             $recipient: '%env(EMAIL_RECIPIENT)%'
             $from: '%env(EMAIL_FROM)%'
-            $cc: '%env(EMAIL_CC)%'
 
     App\EventListener\SitemapLocaleSubscriber:
         arguments:
