@@ -120,12 +120,12 @@ privacy_policy:
 
   # Section 2: Hosting
   section2_title: "2. Hosting"
-  hosting_provider_title: "AWS (Amazon Web Services)"
-  hosting_provider_description: "Wir hosten unsere Website bei AWS (Amazon Web Services). Anbieter ist die Amazon Web Services, Inc., 410 Terry Avenue North, Seattle WA 98109, USA (nachfolgend AWS)."
+  hosting_provider_title: "Hetzner Online GmbH"
+  hosting_provider_description: "Unsere Website wird bei der Hetzner Online GmbH gehostet. Der Anbieter ist Hetzner Online GmbH, Industriestr. 25, 91710 Gunzenhausen, Deutschland (im Folgenden Hetzner)."
 
   processing_agreement_title: "Auftragsverarbeitung"
-  processing_agreement_description: "Wir nutzen die Cloud-Dienste von Amazon Web Services (AWS) zur Bereitstellung unserer Website. AWS verarbeitet personenbezogene Daten ausschließlich nach unseren Weisungen und in Übereinstimmung mit den geltenden Datenschutzbestimmungen gemäß DSGVO. Wir nutzen ausschließlich Server in der EU, wodurch eine Übertragung in Drittländer grundsätzlich ausgeschlossen ist. Sollte dennoch eine solche Übertragung stattfinden, stützen wir uns auf die Standardvertragsklauseln (SCCs) gemäß Art. 46 DSGVO sowie auf die Zertifizierung unter dem EU-US Data Privacy Framework, um ein angemessenes Schutzniveau sicherzustellen."
-  processing_agreement_link: "Details finden Sie in der <a href=\"https://aws.amazon.com/de/privacy/?nc1=h_ls\" target=\"_blank\">Datenschutzerklärung von AWS</a> und <a href=\"https://docs.aws.amazon.com/whitepapers/latest/navigating-gdpr-compliance/aws-data-processing-addendum-dpa.html\" target=\"_blank\">AWS Data Processing Addendum (DPA)</a>."
+  processing_agreement_description: "Wir nutzen die Cloud-Dienste der Hetzner Online GmbH zum Betrieb unserer Website. Hetzner verarbeitet personenbezogene Daten ausschließlich gemäß unseren Anweisungen und unter Einhaltung der geltenden Datenschutzbestimmungen gemäß der DSGVO. Wir verwenden ausschließlich Server innerhalb der EU, wodurch eine Übertragung in Drittländer ausgeschlossen ist."
+  processing_agreement_link: "Details finden Sie in der <a href=\"https://www.hetzner.com/de/legal/privacy-policy\" target=\"_blank\">Datenschutzerklärung von AWS</a> und <a href=\"https://www.hetzner.com/AV/DPA_de.pdf\" target=\"_blank\">Hetzner's Data Processing Addendum (DPA)</a>."
 
   # Section 3: Allgemeine Hinweise und Pflichtinformationen
   section3_title: "3. Allgemeine Hinweise und Pflicht­informationen"

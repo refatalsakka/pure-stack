@@ -120,12 +120,12 @@ privacy_policy:
 
   # Section 2: Hosting
   section2_title: "2. Hosting"
-  hosting_provider_title: "AWS (Amazon Web Services)"
-  hosting_provider_description: "We host our website with AWS (Amazon Web Services). The provider is Amazon Web Services, Inc., 410 Terry Avenue North, Seattle WA 98109, USA (hereinafter AWS)."
+  hosting_provider_title: "Hetzner Online GmbH"
+  hosting_provider_description: "We host our website with Hetzner Online GmbH. The provider is Hetzner Online GmbH, Industriestr. 25, 91710 Gunzenhausen, Germany (hereinafter Hetzner)"
 
   processing_agreement_title: "Data Processing Agreement"
-  processing_agreement_description: "We use the cloud services of Amazon Web Services (AWS) to operate our website. AWS processes personal data exclusively according to our instructions and in compliance with the applicable data protection regulations under the GDPR. We use only servers within the EU, which generally prevents any transfer to third countries. Should such a transfer occur, we rely on the Standard Contractual Clauses (SCCs) according to Art. 46 GDPR as well as the certification under the EU-US Data Privacy Framework to ensure an adequate level of data protection."
-  processing_agreement_link: "Details can be found in <a href=\"https://aws.amazon.com/privacy/\" target=\"_blank\">AWS privacy policy</a> and in <a href=\"https://docs.aws.amazon.com/whitepapers/latest/navigating-gdpr-compliance/aws-data-processing-addendum-dpa.html\" target=\"_blank\">AWS Data Processing Addendum (DPA)</a>."
+  processing_agreement_description: "We use the cloud services of Hetzner Online GmbH to operate our website. Hetzner processes personal data exclusively according to our instructions and in compliance with the applicable data protection regulations under the GDPR. We use only servers located within the EU, which ensures that no transfer to third countries occurs."
+  processing_agreement_link: "Details can be found in <a href=\"https://www.hetzner.com/legal/privacy-policy\" target=\"_blank\">Hetzner's privacy policy</a> and in <a href=\"https://www.hetzner.com/AV/DPA_en.pdf\" target=\"_blank\">Hetzner's Data Processing Addendum (DPA)</a>."
 
   # Section 3: General Information and Mandatory Information
   section3_title: "3. General Information and Mandatory Information"
